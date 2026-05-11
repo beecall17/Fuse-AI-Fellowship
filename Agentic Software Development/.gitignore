@@ -1,0 +1,11 @@
+.env
+.env.*
+venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.__pycache__
+.python-version
+uv.lock
+seed.sql
