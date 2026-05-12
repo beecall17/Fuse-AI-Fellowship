@@ -11,8 +11,8 @@ load_dotenv()
 logger = get_logger(__name__)
 
 # Database configuration
-DATABASE_URL = os.getenv("DATABASE_URL")
-print(f"DEBUG: Connecting with URL: {DATABASE_URL}") # <--- ADD THIS
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://app_user:secure_password_123@localhost:5432/classicmodels")
+
 # Create async engine
 engine = create_async_engine(
     DATABASE_URL,

@@ -52,3 +52,9 @@ Changed the code to use v2 syntax where the strings are passed as wrapped in the
 Since in this task, we are only building the customer api, the relationships between customer with other tables i.e., order and payment were causing circular dependency and mapping errors. So, I commented out the relationships in the customer model. 
 
 And did the Test on /docs endpoint. It worked with listing the customers with their details and get customer by customer id. Other CRUD operations are pending due to their dependency on other tables, which will be implemented in later tasks.
+
+
+# Task 3: Concurrency (Twelve-Factor App)
+In  this task, created all the endpoints for the remaining tables. As well as fixed the issues with the previous task. The CRUD operations for customer table is now working fine. 
+
+No hard issues in this task. Just few database foreign key constrains issues while creating records in the models. 

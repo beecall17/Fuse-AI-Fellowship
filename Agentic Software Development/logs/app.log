@@ -1,145 +1,198 @@
-2026-05-12 10:52:11,077 - main - INFO - Starting Customer API application...
-2026-05-12 10:52:11,184 - app.database.session - ERROR - Database test connection failed: password authentication failed for user "app_user"
-2026-05-12 10:52:11,184 - main - ERROR - Failed to connect to database. Application startup aborted.
-2026-05-12 10:56:09,853 - main - INFO - Starting Customer API application...
-2026-05-12 10:56:09,917 - app.database.session - ERROR - Database test connection failed: password authentication failed for user "app_user"
-2026-05-12 10:56:09,918 - main - ERROR - Failed to connect to database. Application startup aborted.
-2026-05-12 11:03:21,434 - main - INFO - Starting Customer API application...
-2026-05-12 11:03:21,498 - app.database.session - ERROR - Database test connection failed: password authentication failed for user "app_user"
-2026-05-12 11:03:21,504 - main - ERROR - Failed to connect to database. Application startup aborted.
-2026-05-12 11:13:51,357 - main - INFO - Starting Customer API application...
-2026-05-12 11:13:51,528 - app.database.session - ERROR - Database test connection failed: password authentication failed for user "app_user"
-2026-05-12 11:13:51,529 - main - ERROR - Failed to connect to database. Application startup aborted.
-2026-05-12 11:16:44,370 - main - INFO - Starting Customer API application...
-2026-05-12 11:16:44,436 - app.database.session - ERROR - Database test connection failed: password authentication failed for user "app_user"
-2026-05-12 11:16:44,437 - main - ERROR - Failed to connect to database. Application startup aborted.
-2026-05-12 11:19:57,720 - main - INFO - Starting Customer API application...
-2026-05-12 11:19:57,785 - app.database.session - ERROR - Database test connection failed: password authentication failed for user "app_user"
-2026-05-12 11:19:57,786 - main - ERROR - Failed to connect to database. Application startup aborted.
-2026-05-12 11:21:19,747 - main - INFO - Starting Customer API application...
-2026-05-12 11:21:19,802 - app.database.session - ERROR - Database test connection failed: password authentication failed for user "app_user"
-2026-05-12 11:21:19,802 - main - ERROR - Failed to connect to database. Application startup aborted.
-2026-05-12 11:26:10,341 - main - INFO - Starting Customer API application...
-2026-05-12 11:26:12,369 - app.database.session - ERROR - Database test connection failed: [Errno 10061] Connect call failed ('127.0.0.1', 5433)
-2026-05-12 11:26:12,370 - main - ERROR - Failed to connect to database. Application startup aborted.
-2026-05-12 11:27:16,756 - main - INFO - Starting Customer API application...
-2026-05-12 11:27:18,802 - app.database.session - ERROR - Database test connection failed: [Errno 10061] Connect call failed ('127.0.0.1', 5433)
-2026-05-12 11:27:18,802 - main - ERROR - Failed to connect to database. Application startup aborted.
-2026-05-12 11:32:56,266 - main - INFO - Starting Customer API application...
-2026-05-12 11:32:56,332 - app.database.session - ERROR - Database test connection failed: Not an executable object: 'SELECT 1'
-2026-05-12 11:32:56,332 - main - ERROR - Failed to connect to database. Application startup aborted.
-2026-05-12 11:35:19,768 - main - INFO - Starting Customer API application...
-2026-05-12 11:35:19,817 - app.database.session - ERROR - Database test connection failed: name 'text' is not defined
-2026-05-12 11:35:19,818 - main - ERROR - Failed to connect to database. Application startup aborted.
-2026-05-12 11:35:23,743 - main - INFO - Starting Customer API application...
-2026-05-12 11:35:23,790 - app.database.session - ERROR - Database test connection failed: name 'text' is not defined
-2026-05-12 11:35:23,791 - main - ERROR - Failed to connect to database. Application startup aborted.
-2026-05-12 11:37:22,250 - main - INFO - Starting Customer API application...
-2026-05-12 11:37:22,311 - app.database.session - INFO - Database test connection successful
-2026-05-12 11:37:22,339 - app.database.session - INFO - Database tables initialized successfully
-2026-05-12 11:37:22,340 - main - INFO - Database initialization completed successfully
-2026-05-12 11:37:22,340 - main - INFO - Customer API application started successfully
-2026-05-12 11:49:38,543 - app.database.session - INFO - Database connection established successfully
-2026-05-12 11:49:38,544 - app.api.customers - INFO - API Request: GET /customers/?skip=0&limit=100 from 127.0.0.1
-2026-05-12 11:49:38,548 - app.crud.customer - ERROR - Error retrieving customers: When initializing mapper Mapper[Customer(customers)], expression 'Order' failed to locate a name ('Order'). If this is a class name, consider adding this relationship() to the <class 'app.models.customer.Customer'> class after both dependent classes have been defined.
-2026-05-12 11:49:38,549 - app.api.customers - ERROR - Error listing customers: When initializing mapper Mapper[Customer(customers)], expression 'Order' failed to locate a name ('Order'). If this is a class name, consider adding this relationship() to the <class 'app.models.customer.Customer'> class after both dependent classes have been defined.
-2026-05-12 11:49:38,549 - app.api.customers - INFO - API Response: GET /customers/?skip=0&limit=100 - Status: 500
-2026-05-12 11:49:38,550 - app.database.session - ERROR - Database connection failed: 500: Internal server error
-2026-05-12 11:49:38,550 - app.database.session - INFO - Database connection closed
-2026-05-12 11:49:50,632 - app.database.session - INFO - Database connection established successfully
-2026-05-12 11:49:50,632 - app.api.customers - INFO - API Request: GET /customers/?skip=1&limit=100 from 127.0.0.1
-2026-05-12 11:49:50,633 - app.crud.customer - ERROR - Error retrieving customers: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Customer(customers)]'. Original exception was: When initializing mapper Mapper[Customer(customers)], expression 'Order' failed to locate a name ('Order'). If this is a class name, consider adding this relationship() to the <class 'app.models.customer.Customer'> class after both dependent classes have been defined.
-2026-05-12 11:49:50,634 - app.api.customers - ERROR - Error listing customers: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Customer(customers)]'. Original exception was: When initializing mapper Mapper[Customer(customers)], expression 'Order' failed to locate a name ('Order'). If this is a class name, consider adding this relationship() to the <class 'app.models.customer.Customer'> class after both dependent classes have been defined.
-2026-05-12 11:49:50,634 - app.api.customers - INFO - API Response: GET /customers/?skip=1&limit=100 - Status: 500
-2026-05-12 11:49:50,634 - app.database.session - ERROR - Database connection failed: 500: Internal server error
-2026-05-12 11:49:50,635 - app.database.session - INFO - Database connection closed
-2026-05-12 11:50:40,802 - main - INFO - Shutting down Customer API application...
-2026-05-12 11:50:51,098 - main - INFO - Starting Customer API application...
-2026-05-12 11:50:51,156 - app.database.session - INFO - Database test connection successful
-2026-05-12 11:50:51,171 - app.database.session - INFO - Database tables initialized successfully
-2026-05-12 11:50:51,172 - main - INFO - Database initialization completed successfully
-2026-05-12 11:50:51,172 - main - INFO - Customer API application started successfully
-2026-05-12 11:51:52,846 - app.database.session - INFO - Database connection established successfully
-2026-05-12 11:51:52,847 - app.api.customers - INFO - API Request: GET /customers/?skip=0&limit=10 from 127.0.0.1
-2026-05-12 11:51:52,849 - app.crud.customer - ERROR - Error retrieving customers: When initializing mapper Mapper[Customer(customers)], expression 'Order' failed to locate a name ('Order'). If this is a class name, consider adding this relationship() to the <class 'app.models.customer.Customer'> class after both dependent classes have been defined.
-2026-05-12 11:51:52,850 - app.api.customers - ERROR - Error listing customers: When initializing mapper Mapper[Customer(customers)], expression 'Order' failed to locate a name ('Order'). If this is a class name, consider adding this relationship() to the <class 'app.models.customer.Customer'> class after both dependent classes have been defined.
-2026-05-12 11:51:52,850 - app.api.customers - INFO - API Response: GET /customers/?skip=0&limit=10 - Status: 500
-2026-05-12 11:51:52,851 - app.database.session - ERROR - Database connection failed: 500: Internal server error
-2026-05-12 11:51:52,851 - app.database.session - INFO - Database connection closed
-2026-05-12 11:56:34,285 - app.database.session - INFO - Database connection established successfully
-2026-05-12 11:56:34,287 - app.api.customers - INFO - API Request: POST /customers/ from 127.0.0.1
-2026-05-12 11:56:34,290 - app.crud.customer - ERROR - Error creating customer: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Customer(customers)]'. Original exception was: When initializing mapper Mapper[Customer(customers)], expression 'Order' failed to locate a name ('Order'). If this is a class name, consider adding this relationship() to the <class 'app.models.customer.Customer'> class after both dependent classes have been defined.
-2026-05-12 11:56:34,290 - app.api.customers - ERROR - Error creating customer: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Customer(customers)]'. Original exception was: When initializing mapper Mapper[Customer(customers)], expression 'Order' failed to locate a name ('Order'). If this is a class name, consider adding this relationship() to the <class 'app.models.customer.Customer'> class after both dependent classes have been defined.
-2026-05-12 11:56:34,291 - app.api.customers - INFO - API Response: POST /customers/ - Status: 500
-2026-05-12 11:56:34,291 - app.database.session - ERROR - Database connection failed: 500: Internal server error
-2026-05-12 11:56:34,291 - app.database.session - INFO - Database connection closed
-2026-05-12 11:57:31,800 - main - INFO - Shutting down Customer API application...
-2026-05-12 11:57:33,185 - main - INFO - Starting Customer API application...
-2026-05-12 11:57:33,246 - app.database.session - INFO - Database test connection successful
-2026-05-12 11:57:33,259 - app.database.session - INFO - Database tables initialized successfully
-2026-05-12 11:57:33,259 - main - INFO - Database initialization completed successfully
-2026-05-12 11:57:33,259 - main - INFO - Customer API application started successfully
-2026-05-12 11:57:53,088 - app.database.session - INFO - Database connection established successfully
-2026-05-12 11:57:53,088 - app.api.customers - INFO - API Request: POST /customers/ from 127.0.0.1
-2026-05-12 11:57:53,136 - app.crud.customer - ERROR - Error creating customer: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "customers" violates foreign key constraint "customers_salesRepEmployeeNumber_fkey"
+2026-05-12 13:22:40,151 - main - INFO - Shutting down Customer API application...
+2026-05-12 13:22:41,639 - main - INFO - Starting Customer API application...
+2026-05-12 13:22:41,696 - app.database.session - INFO - Database test connection successful
+2026-05-12 13:22:41,722 - app.database.session - INFO - Database tables initialized successfully
+2026-05-12 13:22:41,722 - main - INFO - Database initialization completed successfully
+2026-05-12 13:22:41,723 - main - INFO - Customer API application started successfully
+2026-05-12 13:22:46,298 - main - INFO - Shutting down Customer API application...
+2026-05-12 13:22:47,719 - main - INFO - Starting Customer API application...
+2026-05-12 13:22:47,783 - app.database.session - INFO - Database test connection successful
+2026-05-12 13:22:47,814 - app.database.session - INFO - Database tables initialized successfully
+2026-05-12 13:22:47,814 - main - INFO - Database initialization completed successfully
+2026-05-12 13:22:47,815 - main - INFO - Customer API application started successfully
+2026-05-12 13:23:00,363 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:23:00,364 - app.api.dashboard - INFO - API Request: GET /dashboard/customers/count from 127.0.0.1
+2026-05-12 13:23:00,365 - app.crud.dashboard - INFO - Starting customer count query
+2026-05-12 13:23:00,406 - app.crud.dashboard - INFO - Customer count query completed: 122 records
+2026-05-12 13:23:00,406 - app.api.dashboard - INFO - API Response: GET /dashboard/customers/count - Status: 200
+2026-05-12 13:23:00,409 - app.database.session - INFO - Database connection closed
+2026-05-12 13:23:09,306 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:23:09,306 - app.api.dashboard - INFO - API Request: GET /dashboard/orders/count from 127.0.0.1
+2026-05-12 13:23:09,306 - app.crud.dashboard - INFO - Starting order count query
+2026-05-12 13:23:09,322 - app.crud.dashboard - INFO - Order count query completed: 326 records
+2026-05-12 13:23:09,322 - app.api.dashboard - INFO - API Response: GET /dashboard/orders/count - Status: 200
+2026-05-12 13:23:09,325 - app.database.session - INFO - Database connection closed
+2026-05-12 13:23:14,099 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:23:14,100 - app.api.dashboard - INFO - API Request: GET /dashboard/products/count from 127.0.0.1
+2026-05-12 13:23:14,100 - app.crud.dashboard - INFO - Starting product count query
+2026-05-12 13:23:14,115 - app.crud.dashboard - INFO - Product count query completed: 110 records
+2026-05-12 13:23:14,115 - app.api.dashboard - INFO - API Response: GET /dashboard/products/count - Status: 200
+2026-05-12 13:23:14,118 - app.database.session - INFO - Database connection closed
+2026-05-12 13:23:19,067 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:23:19,068 - app.api.dashboard - INFO - API Request: GET /dashboard/employees/count from 127.0.0.1
+2026-05-12 13:23:19,068 - app.crud.dashboard - INFO - Starting employee count query
+2026-05-12 13:23:19,078 - app.crud.dashboard - INFO - Employee count query completed: 23 records
+2026-05-12 13:23:19,079 - app.api.dashboard - INFO - API Response: GET /dashboard/employees/count - Status: 200
+2026-05-12 13:23:19,081 - app.database.session - INFO - Database connection closed
+2026-05-12 13:23:24,510 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:23:24,511 - app.api.dashboard - INFO - API Request: GET /dashboard/offices/count from 127.0.0.1
+2026-05-12 13:23:24,511 - app.crud.dashboard - INFO - Starting office count query
+2026-05-12 13:23:24,518 - app.crud.dashboard - INFO - Office count query completed: 7 records
+2026-05-12 13:23:24,518 - app.api.dashboard - INFO - API Response: GET /dashboard/offices/count - Status: 200
+2026-05-12 13:23:24,521 - app.database.session - INFO - Database connection closed
+2026-05-12 13:23:29,422 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:23:29,422 - app.api.dashboard - INFO - API Request: GET /dashboard/payments/count from 127.0.0.1
+2026-05-12 13:23:29,422 - app.crud.dashboard - INFO - Starting payment count query
+2026-05-12 13:23:29,430 - app.crud.dashboard - INFO - Payment count query completed: 273 records
+2026-05-12 13:23:29,430 - app.api.dashboard - INFO - API Response: GET /dashboard/payments/count - Status: 200
+2026-05-12 13:23:29,433 - app.database.session - INFO - Database connection closed
+2026-05-12 13:23:34,907 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:23:34,907 - app.api.dashboard - INFO - API Request: GET /dashboard/orderdetails/count from 127.0.0.1
+2026-05-12 13:23:34,907 - app.crud.dashboard - INFO - Starting orderdetail count query
+2026-05-12 13:23:34,915 - app.crud.dashboard - INFO - OrderDetail count query completed: 2996 records
+2026-05-12 13:23:34,915 - app.api.dashboard - INFO - API Response: GET /dashboard/orderdetails/count - Status: 200
+2026-05-12 13:23:34,918 - app.database.session - INFO - Database connection closed
+2026-05-12 13:23:40,140 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:23:40,141 - app.api.dashboard - INFO - API Request: GET /dashboard/productlines/count from 127.0.0.1
+2026-05-12 13:23:40,141 - app.crud.dashboard - INFO - Starting productline count query
+2026-05-12 13:23:40,156 - app.crud.dashboard - INFO - ProductLine count query completed: 7 records
+2026-05-12 13:23:40,156 - app.api.dashboard - INFO - API Response: GET /dashboard/productlines/count - Status: 200
+2026-05-12 13:23:40,159 - app.database.session - INFO - Database connection closed
+2026-05-12 13:23:45,875 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:23:45,875 - app.api.dashboard - INFO - API Request: GET /dashboard/overall_counts from 127.0.0.1
+2026-05-12 13:23:45,875 - app.api.dashboard - INFO - Starting concurrent overall counts request
+2026-05-12 13:23:45,875 - app.crud.dashboard - INFO - Starting concurrent count queries for all tables
+2026-05-12 13:23:45,876 - app.crud.dashboard - INFO - Starting customer count query
+2026-05-12 13:23:45,877 - app.crud.dashboard - INFO - Starting order count query
+2026-05-12 13:23:45,878 - app.crud.dashboard - INFO - Starting product count query
+2026-05-12 13:23:45,879 - app.crud.dashboard - INFO - Starting employee count query
+2026-05-12 13:23:45,881 - app.crud.dashboard - INFO - Starting office count query
+2026-05-12 13:23:45,882 - app.crud.dashboard - INFO - Starting payment count query
+2026-05-12 13:23:45,883 - app.crud.dashboard - INFO - Starting orderdetail count query
+2026-05-12 13:23:45,884 - app.crud.dashboard - INFO - Starting productline count query
+2026-05-12 13:23:45,887 - app.crud.dashboard - INFO - Customer count query completed: 122 records
+2026-05-12 13:23:45,889 - app.crud.dashboard - INFO - Order count query completed: 326 records
+2026-05-12 13:23:45,890 - app.crud.dashboard - INFO - Product count query completed: 110 records
+2026-05-12 13:23:45,892 - app.crud.dashboard - INFO - Employee count query completed: 23 records
+2026-05-12 13:23:45,894 - app.crud.dashboard - INFO - Office count query completed: 7 records
+2026-05-12 13:23:45,895 - app.crud.dashboard - INFO - Payment count query completed: 273 records
+2026-05-12 13:23:45,897 - app.crud.dashboard - INFO - OrderDetail count query completed: 2996 records
+2026-05-12 13:23:45,898 - app.crud.dashboard - INFO - ProductLine count query completed: 7 records
+2026-05-12 13:23:45,899 - app.crud.dashboard - INFO - Concurrent count queries completed in 0.023 seconds
+2026-05-12 13:23:45,899 - app.api.dashboard - INFO - API Response: GET /dashboard/overall_counts - Status: 200
+2026-05-12 13:23:45,902 - app.database.session - INFO - Database connection closed
+2026-05-12 13:24:13,743 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:24:13,744 - app.api.customers - INFO - API Request: GET /customers/?skip=0&limit=10 from 127.0.0.1
+2026-05-12 13:24:13,764 - app.crud.customer - INFO - Retrieved 10 customers (skip=0, limit=10, total=122)
+2026-05-12 13:24:13,767 - app.api.customers - INFO - API Response: GET /customers/?skip=0&limit=10 - Status: 200
+2026-05-12 13:24:13,770 - app.database.session - INFO - Database connection closed
+2026-05-12 13:24:29,357 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:24:29,358 - app.api.customers - INFO - API Request: GET /customers/103 from 127.0.0.1
+2026-05-12 13:24:29,364 - app.crud.customer - INFO - Retrieved customer: 103
+2026-05-12 13:24:29,364 - app.api.customers - INFO - API Response: GET /customers/103 - Status: 200
+2026-05-12 13:24:29,368 - app.database.session - INFO - Database connection closed
+2026-05-12 13:25:28,896 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:25:28,897 - app.api.customers - INFO - API Request: POST /customers/ from 127.0.0.1
+2026-05-12 13:25:28,930 - app.crud.customer - INFO - Created customer: 497
+2026-05-12 13:25:28,930 - app.api.customers - INFO - API Response: POST /customers/ - Status: 201
+2026-05-12 13:25:28,933 - app.database.session - INFO - Database connection closed
+2026-05-12 13:25:59,400 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:25:59,401 - app.api.customers - INFO - API Request: PUT /customers/109 from 127.0.0.1
+2026-05-12 13:25:59,406 - app.crud.customer - WARNING - Customer not found: 109
+2026-05-12 13:25:59,406 - app.crud.customer - WARNING - Cannot update - customer not found: 109
+2026-05-12 13:25:59,407 - app.api.customers - WARNING - Cannot update - customer not found: 109
+2026-05-12 13:25:59,407 - app.api.customers - INFO - API Response: PUT /customers/109 - Status: 404
+2026-05-12 13:25:59,407 - app.database.session - ERROR - Database connection failed: 404: Customer not found
+2026-05-12 13:25:59,409 - app.database.session - INFO - Database connection closed
+2026-05-12 13:26:08,924 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:26:08,925 - app.api.customers - INFO - API Request: PUT /customers/409 from 127.0.0.1
+2026-05-12 13:26:08,929 - app.crud.customer - INFO - Retrieved customer: 409
+2026-05-12 13:26:08,948 - app.crud.customer - ERROR - Error updating customer 409: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "customers" violates foreign key constraint "customers_salesRepEmployeeNumber_fkey"
 DETAIL:  Key (salesRepEmployeeNumber)=(0) is not present in table "employees".
-[SQL: INSERT INTO customers ("customerNumber", "customerName", "contactLastName", "contactFirstName", phone, "addressLine1", "addressLine2", city, state, "postalCode", country, "salesRepEmployeeNumber", "creditLimit") VALUES ($1::INTEGER, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR, $7::VARCHAR, $8::VARCHAR, $9::VARCHAR, $10::VARCHAR, $11::VARCHAR, $12::INTEGER, $13::NUMERIC(10, 2))]
-[parameters: (497, 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 0, Decimal('0'))]
+[SQL: UPDATE customers SET "customerName"=$1::VARCHAR, "contactLastName"=$2::VARCHAR, "contactFirstName"=$3::VARCHAR, phone=$4::VARCHAR, "addressLine1"=$5::VARCHAR, "addressLine2"=$6::VARCHAR, city=$7::VARCHAR, state=$8::VARCHAR, "postalCode"=$9::VARCHAR, country=$10::VARCHAR, "salesRepEmployeeNumber"=$11::INTEGER, "creditLimit"=$12::NUMERIC(10, 2) WHERE customers."customerNumber" = $13::INTEGER]
+[parameters: ('string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 0, Decimal('0'), 409)]
 (Background on this error at: https://sqlalche.me/e/20/gkpj)
-2026-05-12 11:57:53,137 - app.api.customers - ERROR - Error creating customer: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "customers" violates foreign key constraint "customers_salesRepEmployeeNumber_fkey"
+2026-05-12 13:26:08,948 - app.api.customers - ERROR - Error updating customer 409: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "customers" violates foreign key constraint "customers_salesRepEmployeeNumber_fkey"
 DETAIL:  Key (salesRepEmployeeNumber)=(0) is not present in table "employees".
-[SQL: INSERT INTO customers ("customerNumber", "customerName", "contactLastName", "contactFirstName", phone, "addressLine1", "addressLine2", city, state, "postalCode", country, "salesRepEmployeeNumber", "creditLimit") VALUES ($1::INTEGER, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR, $7::VARCHAR, $8::VARCHAR, $9::VARCHAR, $10::VARCHAR, $11::VARCHAR, $12::INTEGER, $13::NUMERIC(10, 2))]
-[parameters: (497, 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 0, Decimal('0'))]
+[SQL: UPDATE customers SET "customerName"=$1::VARCHAR, "contactLastName"=$2::VARCHAR, "contactFirstName"=$3::VARCHAR, phone=$4::VARCHAR, "addressLine1"=$5::VARCHAR, "addressLine2"=$6::VARCHAR, city=$7::VARCHAR, state=$8::VARCHAR, "postalCode"=$9::VARCHAR, country=$10::VARCHAR, "salesRepEmployeeNumber"=$11::INTEGER, "creditLimit"=$12::NUMERIC(10, 2) WHERE customers."customerNumber" = $13::INTEGER]
+[parameters: ('string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 0, Decimal('0'), 409)]
 (Background on this error at: https://sqlalche.me/e/20/gkpj)
-2026-05-12 11:57:53,138 - app.api.customers - INFO - API Response: POST /customers/ - Status: 500
-2026-05-12 11:57:53,138 - app.database.session - ERROR - Database connection failed: 500: Internal server error
-2026-05-12 11:57:53,139 - app.database.session - INFO - Database connection closed
-2026-05-12 11:58:40,719 - app.database.session - INFO - Database connection established successfully
-2026-05-12 11:58:40,719 - app.api.customers - INFO - API Request: GET /customers/?skip=0&limit=100 from 127.0.0.1
-2026-05-12 11:58:40,742 - app.crud.customer - INFO - Retrieved 100 customers (skip=0, limit=100, total=122)
-2026-05-12 11:58:40,744 - app.api.customers - INFO - API Response: GET /customers/?skip=0&limit=100 - Status: 200
-2026-05-12 11:58:40,749 - app.database.session - INFO - Database connection closed
-2026-05-12 11:59:11,278 - app.database.session - INFO - Database connection established successfully
-2026-05-12 11:59:11,278 - app.api.customers - INFO - API Request: GET /customers/103 from 127.0.0.1
-2026-05-12 11:59:11,286 - app.crud.customer - INFO - Retrieved customer: 103
-2026-05-12 11:59:11,287 - app.api.customers - INFO - API Response: GET /customers/103 - Status: 200
-2026-05-12 11:59:11,290 - app.database.session - INFO - Database connection closed
-2026-05-12 11:59:33,988 - app.database.session - INFO - Database connection established successfully
-2026-05-12 11:59:33,989 - app.api.customers - INFO - API Request: PUT /customers/103 from 127.0.0.1
-2026-05-12 11:59:33,993 - app.crud.customer - INFO - Retrieved customer: 103
-2026-05-12 11:59:34,004 - app.crud.customer - ERROR - Error updating customer 103: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "customers" violates foreign key constraint "customers_salesRepEmployeeNumber_fkey"
+2026-05-12 13:26:08,948 - app.api.customers - INFO - API Response: PUT /customers/409 - Status: 500
+2026-05-12 13:26:08,949 - app.database.session - ERROR - Database connection failed: 500: Internal server error
+2026-05-12 13:26:08,949 - app.database.session - INFO - Database connection closed
+2026-05-12 13:26:27,126 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:26:27,126 - app.api.customers - INFO - API Request: PUT /customers/103 from 127.0.0.1
+2026-05-12 13:26:27,130 - app.crud.customer - INFO - Retrieved customer: 103
+2026-05-12 13:26:27,136 - app.crud.customer - ERROR - Error updating customer 103: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "customers" violates foreign key constraint "customers_salesRepEmployeeNumber_fkey"
 DETAIL:  Key (salesRepEmployeeNumber)=(0) is not present in table "employees".
 [SQL: UPDATE customers SET "customerName"=$1::VARCHAR, "contactLastName"=$2::VARCHAR, "contactFirstName"=$3::VARCHAR, phone=$4::VARCHAR, "addressLine1"=$5::VARCHAR, "addressLine2"=$6::VARCHAR, city=$7::VARCHAR, state=$8::VARCHAR, "postalCode"=$9::VARCHAR, country=$10::VARCHAR, "salesRepEmployeeNumber"=$11::INTEGER, "creditLimit"=$12::NUMERIC(10, 2) WHERE customers."customerNumber" = $13::INTEGER]
 [parameters: ('string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 0, Decimal('0'), 103)]
 (Background on this error at: https://sqlalche.me/e/20/gkpj)
-2026-05-12 11:59:34,005 - app.api.customers - ERROR - Error updating customer 103: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "customers" violates foreign key constraint "customers_salesRepEmployeeNumber_fkey"
+2026-05-12 13:26:27,136 - app.api.customers - ERROR - Error updating customer 103: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "customers" violates foreign key constraint "customers_salesRepEmployeeNumber_fkey"
 DETAIL:  Key (salesRepEmployeeNumber)=(0) is not present in table "employees".
 [SQL: UPDATE customers SET "customerName"=$1::VARCHAR, "contactLastName"=$2::VARCHAR, "contactFirstName"=$3::VARCHAR, phone=$4::VARCHAR, "addressLine1"=$5::VARCHAR, "addressLine2"=$6::VARCHAR, city=$7::VARCHAR, state=$8::VARCHAR, "postalCode"=$9::VARCHAR, country=$10::VARCHAR, "salesRepEmployeeNumber"=$11::INTEGER, "creditLimit"=$12::NUMERIC(10, 2) WHERE customers."customerNumber" = $13::INTEGER]
 [parameters: ('string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 'string', 0, Decimal('0'), 103)]
 (Background on this error at: https://sqlalche.me/e/20/gkpj)
-2026-05-12 11:59:34,005 - app.api.customers - INFO - API Response: PUT /customers/103 - Status: 500
-2026-05-12 11:59:34,005 - app.database.session - ERROR - Database connection failed: 500: Internal server error
-2026-05-12 11:59:34,006 - app.database.session - INFO - Database connection closed
-2026-05-12 11:59:49,843 - app.database.session - INFO - Database connection established successfully
-2026-05-12 11:59:49,843 - app.api.customers - INFO - API Request: DELETE /customers/103 from 127.0.0.1
-2026-05-12 11:59:49,849 - app.crud.customer - INFO - Retrieved customer: 103
-2026-05-12 11:59:49,860 - app.crud.customer - ERROR - Error deleting customer 103: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "customers" violates foreign key constraint "payments_customerNumber_fkey" on table "payments"
+2026-05-12 13:26:27,136 - app.api.customers - INFO - API Response: PUT /customers/103 - Status: 500
+2026-05-12 13:26:27,137 - app.database.session - ERROR - Database connection failed: 500: Internal server error
+2026-05-12 13:26:27,137 - app.database.session - INFO - Database connection closed
+2026-05-12 13:27:12,575 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:27:12,576 - app.api.customers - INFO - API Request: GET /customers/?skip=0&limit=10 from 127.0.0.1
+2026-05-12 13:27:12,583 - app.crud.customer - INFO - Retrieved 10 customers (skip=0, limit=10, total=123)
+2026-05-12 13:27:12,584 - app.api.customers - INFO - API Response: GET /customers/?skip=0&limit=10 - Status: 200
+2026-05-12 13:27:12,587 - app.database.session - INFO - Database connection closed
+2026-05-12 13:27:24,911 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:27:24,912 - app.api.customers - INFO - API Request: DELETE /customers/103 from 127.0.0.1
+2026-05-12 13:27:24,916 - app.crud.customer - INFO - Retrieved customer: 103
+2026-05-12 13:27:24,928 - app.crud.customer - ERROR - Error deleting customer 103: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "customers" violates foreign key constraint "payments_customerNumber_fkey" on table "payments"
 DETAIL:  Key (customerNumber)=(103) is still referenced from table "payments".
 [SQL: DELETE FROM customers WHERE customers."customerNumber" = $1::INTEGER]
 [parameters: (103,)]
 (Background on this error at: https://sqlalche.me/e/20/gkpj)
-2026-05-12 11:59:49,860 - app.api.customers - ERROR - Error deleting customer 103: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "customers" violates foreign key constraint "payments_customerNumber_fkey" on table "payments"
+2026-05-12 13:27:24,929 - app.api.customers - ERROR - Error deleting customer 103: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "customers" violates foreign key constraint "payments_customerNumber_fkey" on table "payments"
 DETAIL:  Key (customerNumber)=(103) is still referenced from table "payments".
 [SQL: DELETE FROM customers WHERE customers."customerNumber" = $1::INTEGER]
 [parameters: (103,)]
 (Background on this error at: https://sqlalche.me/e/20/gkpj)
-2026-05-12 11:59:49,861 - app.api.customers - INFO - API Response: DELETE /customers/103 - Status: 500
-2026-05-12 11:59:49,861 - app.database.session - ERROR - Database connection failed: 500: Internal server error
-2026-05-12 11:59:49,861 - app.database.session - INFO - Database connection closed
-2026-05-12 12:00:01,678 - app.database.session - INFO - Database test connection successful
-2026-05-12 12:00:20,749 - app.database.session - INFO - Database connection established successfully
-2026-05-12 12:00:20,750 - app.api.customers - INFO - API Request: GET /customers/103 from 127.0.0.1
-2026-05-12 12:00:20,754 - app.crud.customer - INFO - Retrieved customer: 103
-2026-05-12 12:00:20,755 - app.api.customers - INFO - API Response: GET /customers/103 - Status: 200
-2026-05-12 12:00:20,758 - app.database.session - INFO - Database connection closed
-2026-05-12 12:05:51,789 - main - INFO - Shutting down Customer API application...
+2026-05-12 13:27:24,929 - app.api.customers - INFO - API Response: DELETE /customers/103 - Status: 500
+2026-05-12 13:27:24,929 - app.database.session - ERROR - Database connection failed: 500: Internal server error
+2026-05-12 13:27:24,930 - app.database.session - INFO - Database connection closed
+2026-05-12 13:27:36,498 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:27:36,499 - app.api.customers - INFO - API Request: GET /customers/103/orders from 127.0.0.1
+2026-05-12 13:27:36,520 - app.crud.customer - INFO - Retrieved customer with orders: 103
+2026-05-12 13:27:36,520 - app.api.customers - INFO - API Response: GET /customers/103/orders - Status: 200
+2026-05-12 13:27:36,524 - app.database.session - INFO - Database connection closed
+2026-05-12 13:29:32,004 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:29:32,004 - app.api.customers - INFO - API Request: GET /customers/?skip=0&limit=10 from 127.0.0.1
+2026-05-12 13:29:32,011 - app.crud.customer - INFO - Retrieved 10 customers (skip=0, limit=10, total=123)
+2026-05-12 13:29:32,012 - app.api.customers - INFO - API Response: GET /customers/?skip=0&limit=10 - Status: 200
+2026-05-12 13:29:32,017 - app.database.session - INFO - Database connection closed
+2026-05-12 13:29:51,570 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:29:51,571 - app.api.customers - INFO - API Request: DELETE /customers/112 from 127.0.0.1
+2026-05-12 13:29:51,574 - app.crud.customer - INFO - Retrieved customer: 112
+2026-05-12 13:29:51,582 - app.crud.customer - ERROR - Error deleting customer 112: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "customers" violates foreign key constraint "payments_customerNumber_fkey" on table "payments"
+DETAIL:  Key (customerNumber)=(112) is still referenced from table "payments".
+[SQL: DELETE FROM customers WHERE customers."customerNumber" = $1::INTEGER]
+[parameters: (112,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-12 13:29:51,582 - app.api.customers - ERROR - Error deleting customer 112: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "customers" violates foreign key constraint "payments_customerNumber_fkey" on table "payments"
+DETAIL:  Key (customerNumber)=(112) is still referenced from table "payments".
+[SQL: DELETE FROM customers WHERE customers."customerNumber" = $1::INTEGER]
+[parameters: (112,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-12 13:29:51,582 - app.api.customers - INFO - API Response: DELETE /customers/112 - Status: 500
+2026-05-12 13:29:51,583 - app.database.session - ERROR - Database connection failed: 500: Internal server error
+2026-05-12 13:29:51,583 - app.database.session - INFO - Database connection closed
+2026-05-12 13:30:10,814 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:30:10,815 - app.api.customers - INFO - API Request: PUT /customers/103 from 127.0.0.1
+2026-05-12 13:30:10,819 - app.crud.customer - INFO - Retrieved customer: 103
+2026-05-12 13:30:10,837 - app.crud.customer - INFO - Retrieved customer: 103
+2026-05-12 13:30:10,837 - app.crud.customer - INFO - Updated customer: 103
+2026-05-12 13:30:10,837 - app.api.customers - INFO - API Response: PUT /customers/103 - Status: 200
+2026-05-12 13:30:10,841 - app.database.session - INFO - Database connection closed
+2026-05-12 13:30:19,847 - app.database.session - INFO - Database connection established successfully
+2026-05-12 13:30:19,847 - app.api.customers - INFO - API Request: GET /customers/?skip=0&limit=10 from 127.0.0.1
+2026-05-12 13:30:19,855 - app.crud.customer - INFO - Retrieved 10 customers (skip=0, limit=10, total=123)
+2026-05-12 13:30:19,856 - app.api.customers - INFO - API Response: GET /customers/?skip=0&limit=10 - Status: 200
+2026-05-12 13:30:19,858 - app.database.session - INFO - Database connection closed
+2026-05-12 13:37:55,353 - main - INFO - Shutting down Customer API application...

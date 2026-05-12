@@ -3,6 +3,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from app.database.session import init_db, test_connection
 from app.api.customers import router as customers_router
+from app.api.dashboard import router as dashboard_router
 from app.core.logger import get_logger
 
 logger = get_logger(__name__)
@@ -57,6 +58,7 @@ app.add_middleware(
 
 # Include routers
 app.include_router(customers_router)
+app.include_router(dashboard_router)
 
 # Health check endpoint
 @app.get("/health")

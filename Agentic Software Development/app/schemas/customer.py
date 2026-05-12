@@ -1,6 +1,6 @@
 from typing import Optional, List
 from decimal import Decimal
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator
 from datetime import datetime
 
 # Base schema with common fields
@@ -18,13 +18,15 @@ class CustomerBase(BaseModel):
     salesRepEmployeeNumber: Optional[int] = Field(None, description="Sales representative employee number")
     creditLimit: Optional[Decimal] = Field(None, ge=0, description="Credit limit")
 
-    @validator('phone')
+    @field_validator('phone')
+    @classmethod
     def validate_phone(cls, v):
         if v and len(v.strip()) == 0:
             raise ValueError('Phone number cannot be empty')
         return v.strip()
 
-    @validator('customerName', 'contactLastName', 'contactFirstName', 'addressLine1', 'city', 'country')
+    @field_validator('customerName', 'contactLastName', 'contactFirstName', 'addressLine1', 'city', 'country')
+    @classmethod
     def validate_required_strings(cls, v):
         if v and len(v.strip()) == 0:
             raise ValueError('This field cannot be empty')
@@ -49,7 +51,8 @@ class CustomerUpdate(BaseModel):
     salesRepEmployeeNumber: Optional[int] = None
     creditLimit: Optional[Decimal] = Field(None, ge=0)
 
-    @validator('customerName', 'contactLastName', 'contactFirstName', 'addressLine1', 'city', 'country')
+    @field_validator('customerName', 'contactLastName', 'contactFirstName', 'addressLine1', 'city', 'country')
+    @classmethod
     def validate_optional_strings(cls, v):
         if v is not None and len(v.strip()) == 0:
             raise ValueError('This field cannot be empty when provided')

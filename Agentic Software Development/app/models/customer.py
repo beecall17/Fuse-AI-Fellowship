@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Numeric
+from sqlalchemy import Column, Integer, String, Numeric, ForeignKey
 from sqlalchemy.orm import relationship
 from app.database.session import Base
 
@@ -19,12 +19,13 @@ class Customer(Base):
     state = Column(String(50), nullable=True)
     postalCode = Column(String(15), nullable=True)
     country = Column(String(50), nullable=False)
-    salesRepEmployeeNumber = Column(Integer, nullable=True)
+    salesRepEmployeeNumber = Column(Integer, ForeignKey('employees.employeeNumber'), nullable=True)
     creditLimit = Column(Numeric(10, 2), nullable=True)
     
     # Relationships
-    # orders = relationship("Order", back_populates="customer")
-    # payments = relationship("Payment", back_populates="customer")
+    orders = relationship("Order", back_populates="customer")
+    payments = relationship("Payment", back_populates="customer")
+    sales_rep = relationship("Employee", back_populates="customers")
     
     def __repr__(self):
         return f"<Customer(customerNumber={self.customerNumber}, customerName='{self.customerName}')>"
