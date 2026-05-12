@@ -196,3 +196,195 @@ DETAIL:  Key (customerNumber)=(112) is still referenced from table "payments".
 2026-05-12 13:30:19,856 - app.api.customers - INFO - API Response: GET /customers/?skip=0&limit=10 - Status: 200
 2026-05-12 13:30:19,858 - app.database.session - INFO - Database connection closed
 2026-05-12 13:37:55,353 - main - INFO - Shutting down Customer API application...
+2026-05-12 14:09:04,221 - main - INFO - Starting ClassicModels Full REST API application...
+2026-05-12 14:09:04,301 - app.database.session - INFO - Database test connection successful
+2026-05-12 14:09:04,340 - app.database.session - INFO - Database tables initialized successfully
+2026-05-12 14:09:04,341 - main - INFO - Database initialization completed successfully
+2026-05-12 14:09:04,341 - main - INFO - ClassicModels Full REST API application started successfully
+2026-05-12 14:12:54,399 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:12:54,406 - app.api.customers - INFO - API Request: GET /customers/103/orders from 127.0.0.1
+2026-05-12 14:12:54,458 - app.crud.customer - INFO - Retrieved customer with orders: 103
+2026-05-12 14:12:54,459 - app.api.customers - INFO - API Response: GET /customers/103/orders - Status: 200
+2026-05-12 14:12:54,464 - app.database.session - INFO - Database connection closed
+2026-05-12 14:13:05,748 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:13:05,749 - app.api.dashboard - INFO - API Request: GET /dashboard/overall_counts from 127.0.0.1
+2026-05-12 14:13:05,750 - app.api.dashboard - INFO - Starting concurrent overall counts request
+2026-05-12 14:13:05,750 - app.crud.dashboard - INFO - Starting concurrent count queries for all tables
+2026-05-12 14:13:05,750 - app.crud.dashboard - INFO - Starting customer count query
+2026-05-12 14:13:05,752 - app.crud.dashboard - INFO - Starting order count query
+2026-05-12 14:13:05,754 - app.crud.dashboard - INFO - Starting product count query
+2026-05-12 14:13:05,755 - app.crud.dashboard - INFO - Starting employee count query
+2026-05-12 14:13:05,757 - app.crud.dashboard - INFO - Starting office count query
+2026-05-12 14:13:05,758 - app.crud.dashboard - INFO - Starting payment count query
+2026-05-12 14:13:05,760 - app.crud.dashboard - INFO - Starting orderdetail count query
+2026-05-12 14:13:05,761 - app.crud.dashboard - INFO - Starting productline count query
+2026-05-12 14:13:05,780 - app.crud.dashboard - INFO - Customer count query completed: 123 records
+2026-05-12 14:13:05,786 - app.crud.dashboard - INFO - Order count query completed: 326 records
+2026-05-12 14:13:05,792 - app.crud.dashboard - INFO - Product count query completed: 110 records
+2026-05-12 14:13:05,796 - app.crud.dashboard - INFO - Employee count query completed: 23 records
+2026-05-12 14:13:05,800 - app.crud.dashboard - INFO - Office count query completed: 7 records
+2026-05-12 14:13:05,803 - app.crud.dashboard - INFO - Payment count query completed: 273 records
+2026-05-12 14:13:05,811 - app.crud.dashboard - INFO - OrderDetail count query completed: 2996 records
+2026-05-12 14:13:05,816 - app.crud.dashboard - INFO - ProductLine count query completed: 7 records
+2026-05-12 14:13:05,817 - app.crud.dashboard - INFO - Concurrent count queries completed in 0.067 seconds
+2026-05-12 14:13:05,817 - app.api.dashboard - INFO - API Response: GET /dashboard/overall_counts - Status: 200
+2026-05-12 14:13:05,820 - app.database.session - INFO - Database connection closed
+2026-05-12 14:13:18,884 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:13:18,884 - app.api.products - INFO - API Request: GET /products/?skip=0&limit=10 from 127.0.0.1
+2026-05-12 14:13:18,885 - app.crud.product - INFO - Retrieving products with skip=0, limit=10
+2026-05-12 14:13:18,902 - app.crud.product - INFO - Retrieved 10 products (skip=0, limit=10)
+2026-05-12 14:13:18,903 - app.crud.product - INFO - Getting total product count
+2026-05-12 14:13:18,907 - app.crud.product - INFO - Total product count: 110
+2026-05-12 14:13:18,909 - app.api.products - INFO - API Response: GET /products/?skip=0&limit=10 - Status: 200
+2026-05-12 14:13:18,912 - app.database.session - INFO - Database connection closed
+2026-05-12 14:13:55,610 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:13:55,610 - app.api.products - INFO - API Request: GET /products/S10_1678 from 127.0.0.1
+2026-05-12 14:13:55,610 - app.crud.product - INFO - Retrieving product: S10_1678
+2026-05-12 14:13:55,617 - app.crud.product - INFO - Retrieved product: S10_1678
+2026-05-12 14:13:55,618 - app.api.products - INFO - API Response: GET /products/S10_1678 - Status: 200
+2026-05-12 14:13:55,621 - app.database.session - INFO - Database connection closed
+2026-05-12 14:14:04,194 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:14:04,194 - app.api.products - INFO - API Request: GET /products/S10_1678/orderdetails from 127.0.0.1
+2026-05-12 14:14:04,194 - app.api.products - ERROR - Error in get_product_with_orderdetails: 'AsyncSession' object has no attribute 'client'
+2026-05-12 14:14:04,195 - app.api.products - INFO - API Response: GET /products/S10_1678/orderdetails - Status: 500
+2026-05-12 14:14:04,195 - app.database.session - ERROR - Database connection failed: 500: Internal server error
+2026-05-12 14:14:04,195 - app.database.session - INFO - Database connection closed
+2026-05-12 14:14:48,511 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:14:48,512 - app.api.productlines - INFO - API Request: GET /productlines/?skip=0&limit=100 from 127.0.0.1
+2026-05-12 14:14:48,512 - app.crud.productline - INFO - Retrieving product lines with skip=0, limit=100
+2026-05-12 14:14:48,521 - app.crud.productline - INFO - Retrieved 7 product lines (skip=0, limit=100)
+2026-05-12 14:14:48,521 - app.crud.productline - INFO - Getting total product line count
+2026-05-12 14:14:48,524 - app.crud.productline - INFO - Total product line count: 7
+2026-05-12 14:14:48,524 - app.api.productlines - INFO - API Response: GET /productlines/?skip=0&limit=100 - Status: 200
+2026-05-12 14:14:48,527 - app.database.session - INFO - Database connection closed
+2026-05-12 14:15:10,632 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:15:10,632 - app.api.productlines - INFO - API Request: GET /productlines/Classic Cars from 127.0.0.1
+2026-05-12 14:15:10,632 - app.crud.productline - INFO - Retrieving product line: Classic Cars
+2026-05-12 14:15:10,639 - app.crud.productline - INFO - Retrieved product line: Classic Cars
+2026-05-12 14:15:10,639 - app.api.productlines - INFO - API Response: GET /productlines/Classic Cars - Status: 200
+2026-05-12 14:15:10,642 - app.database.session - INFO - Database connection closed
+2026-05-12 14:15:17,838 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:15:17,839 - app.api.productlines - INFO - API Request: GET /productlines/Classic Cars/products from 127.0.0.1
+2026-05-12 14:15:17,839 - app.api.productlines - ERROR - Error in get_productline_with_products: 'AsyncSession' object has no attribute 'client'
+2026-05-12 14:15:17,839 - app.api.productlines - INFO - API Response: GET /productlines/Classic Cars/products - Status: 500
+2026-05-12 14:15:17,839 - app.database.session - ERROR - Database connection failed: 500: Internal server error
+2026-05-12 14:15:17,840 - app.database.session - INFO - Database connection closed
+2026-05-12 14:15:24,152 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:15:24,153 - app.api.offices - INFO - API Request: GET /offices/?skip=0&limit=100 from 127.0.0.1
+2026-05-12 14:15:24,153 - app.crud.office - INFO - Retrieving offices with skip=0, limit=100
+2026-05-12 14:15:24,161 - app.crud.office - INFO - Retrieved 7 offices (skip=0, limit=100)
+2026-05-12 14:15:24,161 - app.crud.office - INFO - Getting total office count
+2026-05-12 14:15:24,164 - app.crud.office - INFO - Total office count: 7
+2026-05-12 14:15:24,164 - app.api.offices - INFO - API Response: GET /offices/?skip=0&limit=100 - Status: 200
+2026-05-12 14:15:24,167 - app.database.session - INFO - Database connection closed
+2026-05-12 14:15:34,993 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:15:34,994 - app.api.offices - INFO - API Request: GET /offices/2 from 127.0.0.1
+2026-05-12 14:15:34,994 - app.crud.office - INFO - Retrieving office: 2
+2026-05-12 14:15:35,000 - app.crud.office - INFO - Retrieved office: 2
+2026-05-12 14:15:35,000 - app.api.offices - INFO - API Response: GET /offices/2 - Status: 200
+2026-05-12 14:15:35,003 - app.database.session - INFO - Database connection closed
+2026-05-12 14:15:42,550 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:15:42,551 - app.api.offices - INFO - API Request: GET /offices/2/employees from 127.0.0.1
+2026-05-12 14:15:42,551 - app.api.offices - ERROR - Error in get_office_with_employees: 'AsyncSession' object has no attribute 'client'
+2026-05-12 14:15:42,551 - app.api.offices - INFO - API Response: GET /offices/2/employees - Status: 500
+2026-05-12 14:15:42,551 - app.database.session - ERROR - Database connection failed: 500: Internal server error
+2026-05-12 14:15:42,552 - app.database.session - INFO - Database connection closed
+2026-05-12 14:15:52,778 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:15:52,778 - app.api.offices - INFO - API Request: PUT /offices/2 from 127.0.0.1
+2026-05-12 14:15:52,779 - app.crud.office - INFO - Updating office: 2
+2026-05-12 14:15:52,802 - app.crud.office - INFO - Updated office: 2
+2026-05-12 14:15:52,803 - app.api.offices - INFO - API Response: PUT /offices/2 - Status: 200
+2026-05-12 14:15:52,807 - app.database.session - INFO - Database connection closed
+2026-05-12 14:16:03,924 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:16:03,925 - app.api.offices - INFO - API Request: GET /offices/2 from 127.0.0.1
+2026-05-12 14:16:03,925 - app.crud.office - INFO - Retrieving office: 2
+2026-05-12 14:16:03,929 - app.crud.office - INFO - Retrieved office: 2
+2026-05-12 14:16:03,929 - app.api.offices - INFO - API Response: GET /offices/2 - Status: 200
+2026-05-12 14:16:03,932 - app.database.session - INFO - Database connection closed
+2026-05-12 14:16:10,490 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:16:10,490 - app.api.offices - INFO - API Request: DELETE /offices/2 from 127.0.0.1
+2026-05-12 14:16:10,491 - app.crud.office - INFO - Deleting office: 2
+2026-05-12 14:16:10,502 - app.crud.office - ERROR - Error deleting office 2: Multiple rows were found when one or none was required
+2026-05-12 14:16:10,503 - app.api.offices - ERROR - Error in delete_office_by_code: Multiple rows were found when one or none was required
+2026-05-12 14:16:10,503 - app.api.offices - INFO - API Response: DELETE /offices/2 - Status: 500
+2026-05-12 14:16:10,503 - app.database.session - ERROR - Database connection failed: 500: Internal server error
+2026-05-12 14:16:10,503 - app.database.session - INFO - Database connection closed
+2026-05-12 14:16:23,508 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:16:23,508 - app.api.employees - INFO - API Request: GET /employees/?skip=0&limit=100 from 127.0.0.1
+2026-05-12 14:16:23,509 - app.crud.employee - INFO - Retrieving employees with skip=0, limit=100
+2026-05-12 14:16:23,515 - app.crud.employee - INFO - Retrieved 23 employees (skip=0, limit=100)
+2026-05-12 14:16:23,516 - app.crud.employee - INFO - Getting total employee count
+2026-05-12 14:16:23,519 - app.crud.employee - INFO - Total employee count: 23
+2026-05-12 14:16:23,697 - app.api.employees - INFO - API Response: GET /employees/?skip=0&limit=100 - Status: 200
+2026-05-12 14:16:23,700 - app.database.session - INFO - Database connection closed
+2026-05-12 14:16:40,684 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:16:40,685 - app.api.employees - INFO - API Request: POST /employees/ from 127.0.0.1
+2026-05-12 14:16:40,685 - app.crud.employee - INFO - Creating employee: 1
+2026-05-12 14:16:40,706 - app.crud.employee - WARNING - Office not found: string
+2026-05-12 14:16:40,709 - app.api.employees - INFO - API Response: POST /employees/ - Status: 422
+2026-05-12 14:16:40,709 - app.database.session - ERROR - Database connection failed: 422: Office with code string does not exist
+2026-05-12 14:16:40,709 - app.database.session - INFO - Database connection closed
+2026-05-12 14:17:58,340 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:17:58,340 - app.api.customers - INFO - API Request: DELETE /customers/103 from 127.0.0.1
+2026-05-12 14:17:58,346 - app.crud.customer - INFO - Retrieved customer: 103
+2026-05-12 14:17:58,358 - app.crud.customer - ERROR - Error deleting customer 103: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "customers" violates foreign key constraint "payments_customerNumber_fkey" on table "payments"
+DETAIL:  Key (customerNumber)=(103) is still referenced from table "payments".
+[SQL: DELETE FROM customers WHERE customers."customerNumber" = $1::INTEGER]
+[parameters: (103,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-12 14:17:58,358 - app.api.customers - ERROR - Error deleting customer 103: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "customers" violates foreign key constraint "payments_customerNumber_fkey" on table "payments"
+DETAIL:  Key (customerNumber)=(103) is still referenced from table "payments".
+[SQL: DELETE FROM customers WHERE customers."customerNumber" = $1::INTEGER]
+[parameters: (103,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-05-12 14:17:58,358 - app.api.customers - INFO - API Response: DELETE /customers/103 - Status: 500
+2026-05-12 14:17:58,359 - app.database.session - ERROR - Database connection failed: 500: Internal server error
+2026-05-12 14:17:58,359 - app.database.session - INFO - Database connection closed
+2026-05-12 14:18:58,534 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:18:58,534 - app.api.products - INFO - API Request: POST /products/ from 127.0.0.1
+2026-05-12 14:18:58,535 - app.crud.product - INFO - Creating product: string
+2026-05-12 14:18:58,541 - app.crud.product - WARNING - Product line not found: string
+2026-05-12 14:18:58,543 - app.api.products - INFO - API Response: POST /products/ - Status: 422
+2026-05-12 14:18:58,544 - app.database.session - ERROR - Database connection failed: 422: Product line 'string' does not exist
+2026-05-12 14:18:58,544 - app.database.session - INFO - Database connection closed
+2026-05-12 14:19:26,068 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:19:26,069 - app.api.products - INFO - API Request: GET /products/string from 127.0.0.1
+2026-05-12 14:19:26,069 - app.crud.product - INFO - Retrieving product: string
+2026-05-12 14:19:26,073 - app.crud.product - WARNING - Product not found: string
+2026-05-12 14:19:26,073 - app.api.products - INFO - API Response: GET /products/string - Status: 404
+2026-05-12 14:19:26,073 - app.database.session - ERROR - Database connection failed: 404: Product with code string not found
+2026-05-12 14:19:26,075 - app.database.session - INFO - Database connection closed
+2026-05-12 14:19:41,083 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:19:41,083 - app.api.products - INFO - API Request: PUT /products/string from 127.0.0.1
+2026-05-12 14:19:41,084 - app.crud.product - INFO - Updating product: string
+2026-05-12 14:19:41,088 - app.crud.product - WARNING - Product not found for update: string
+2026-05-12 14:19:41,090 - app.api.products - INFO - API Response: PUT /products/string - Status: 404
+2026-05-12 14:19:41,091 - app.database.session - ERROR - Database connection failed: 404: Product with code string not found
+2026-05-12 14:19:41,091 - app.database.session - INFO - Database connection closed
+2026-05-12 14:19:50,223 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:19:50,223 - app.api.products - INFO - API Request: DELETE /products/string from 127.0.0.1
+2026-05-12 14:19:50,223 - app.crud.product - INFO - Deleting product: string
+2026-05-12 14:19:50,227 - app.crud.product - WARNING - Product not found for deletion: string
+2026-05-12 14:19:50,228 - app.api.products - INFO - API Response: DELETE /products/string - Status: 404
+2026-05-12 14:19:50,229 - app.database.session - ERROR - Database connection failed: 404: Product with code string not found
+2026-05-12 14:19:50,229 - app.database.session - INFO - Database connection closed
+2026-05-12 14:19:57,953 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:19:57,953 - app.api.products - INFO - API Request: GET /products/string/orderdetails from 127.0.0.1
+2026-05-12 14:19:57,954 - app.api.products - ERROR - Error in get_product_with_orderdetails: 'AsyncSession' object has no attribute 'client'
+2026-05-12 14:19:57,954 - app.api.products - INFO - API Response: GET /products/string/orderdetails - Status: 500
+2026-05-12 14:19:57,954 - app.database.session - ERROR - Database connection failed: 500: Internal server error
+2026-05-12 14:19:57,954 - app.database.session - INFO - Database connection closed
+2026-05-12 14:20:09,461 - app.database.session - INFO - Database connection established successfully
+2026-05-12 14:20:09,461 - app.api.products - INFO - API Request: GET /products/string from 127.0.0.1
+2026-05-12 14:20:09,461 - app.crud.product - INFO - Retrieving product: string
+2026-05-12 14:20:09,465 - app.crud.product - WARNING - Product not found: string
+2026-05-12 14:20:09,466 - app.api.products - INFO - API Response: GET /products/string - Status: 404
+2026-05-12 14:20:09,466 - app.database.session - ERROR - Database connection failed: 404: Product with code string not found
+2026-05-12 14:20:09,468 - app.database.session - INFO - Database connection closed
+2026-05-12 14:25:08,053 - main - INFO - Shutting down ClassicModels Full REST API application...
+2026-05-12 14:25:10,210 - main - INFO - Starting ClassicModels Full REST API application...
+2026-05-12 14:25:10,275 - app.database.session - INFO - Database test connection successful
+2026-05-12 14:25:10,302 - app.database.session - INFO - Database tables initialized successfully
+2026-05-12 14:25:10,302 - main - INFO - Database initialization completed successfully
+2026-05-12 14:25:10,302 - main - INFO - ClassicModels Full REST API application started successfully
+2026-05-12 14:26:53,795 - main - INFO - Shutting down ClassicModels Full REST API application...

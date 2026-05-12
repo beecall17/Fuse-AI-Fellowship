@@ -27,3 +27,8 @@ In  this task, created all the endpoints for the remaining tables. As well as fi
 No hard issues in this task. Just few database foreign key constrains issues while creating records in the models. 
 
 All the models or tables are now connected for the future task 4 use where we will be implementing the business logic of creating the CRUD operations for all the tables.
+
+# Task 4: Full Rest API Implementation
+In this task, implemented the full REST API for all the tables. The CRUD operations for all the tables are now working fine. Also, implemented CRUD operations for all the tables.
+
+The delete operation currently doesn't work due to foreign key constraints. Will fix this in the future. As for example, to delete a customer have to delete all the orders associated with that customer first. So, in order to keep the data integrity, I will implement a cascade delete operation in the future.
