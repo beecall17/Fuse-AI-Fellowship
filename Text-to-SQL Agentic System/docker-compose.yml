@@ -1,0 +1,74 @@
+services:
+  db:
+    image: postgres:16
+    container_name: classicmodels_db
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: classicmodels
+      POSTGRES_USER: app_user
+      POSTGRES_PASSWORD: secure_password_123
+    volumes:
+      # Automatically initialize database using our SQL seed script
+      - ./Scripts/seed.sql:/docker-entrypoint-initdb.d/seed.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app_user -d classicmodels"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - sql_net
+
+  web:
+    build: .
+    container_name: streamlit_app
+    ports:
+      - "8501:8501"
+    environment:
+      # Point to postgres service container 'db' at standard internal port 5432
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=classicmodels
+      - POSTGRES_USER=app_user
+      - POSTGRES_PASSWORD=secure_password_123
+      # Dynamically inject Groq API configurations from the host's active .env file
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - GROQ_API_URL=${GROQ_API_URL}
+      - GROQ_MODEL=${GROQ_MODEL}
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      # Mount volumes to allow bidirectional sharing of query logs and execution results
+      - ./logs:/app/logs
+      - ./Scripts:/app/Scripts
+    networks:
+      - sql_net
+
+  api:
+    build: .
+    container_name: fastapi_agent
+    ports:
+      - "8000:8000"
+    environment:
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=classicmodels
+      - POSTGRES_USER=app_user
+      - POSTGRES_PASSWORD=secure_password_123
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - GROQ_API_URL=${GROQ_API_URL}
+      - GROQ_MODEL=${GROQ_MODEL}
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./logs:/app/logs
+      - ./Scripts:/app/Scripts
+    networks:
+      - sql_net
+    command: uvicorn fastapi_agent:app --host 0.0.0.0 --port 8000
+
+networks:
+  sql_net:
+    driver: bridge

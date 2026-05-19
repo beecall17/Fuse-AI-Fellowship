@@ -1,0 +1,309 @@
+2026-05-19 14:12:41,185 - INFO - Dynamically decomposing question: 'List all products'
+2026-05-19 14:12:42,076 - INFO - Successfully re-decomposed question dynamically: {'intent': 'Retrieve all product details', 'tables': 'products', 'columns': '*', 'filters': 'None', 'joins': 'None', 'Intent': 'None', 'Tables': 'None', 'Columns': 'None', 'Filters': 'None', 'Joins': 'None'}
+2026-05-19 14:12:42,076 - INFO - Generating SQL for question: 'List all products' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:12:42,271 - INFO - Generated SQL: SELECT * FROM information_schema.tables
+2026-05-19 14:12:43,135 - INFO - Dynamically decomposing question: 'Get all customers'
+2026-05-19 14:12:43,375 - INFO - Successfully re-decomposed question dynamically: {'intent': 'Retrieve all customers', 'tables': 'customers', 'columns': '*', 'filters': 'None', 'joins': 'None', 'Intent': 'None', 'Tables': 'None', 'Columns': 'None', 'Filters': 'None', 'Joins': 'None'}
+2026-05-19 14:12:43,375 - INFO - Generating SQL for question: 'Get all customers' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:12:43,611 - INFO - Generated SQL: SELECT * FROM information_schema.tables
+2026-05-19 14:12:44,445 - INFO - Generating SQL for question: 'Show all orders' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:12:44,762 - INFO - Generated SQL: SELECT "orderNumber", "orderDate", "requiredDate", "shippedDate", "status", "comments", "customerNumber" 
+FROM orders
+2026-05-19 14:13:24,004 - INFO - Dynamically decomposing question: 'List all products'
+2026-05-19 14:13:24,810 - INFO - Successfully re-decomposed question dynamically: {'Intent': 'Retrieve all product details', 'Tables': 'products', 'Columns': '*', 'Filters': 'None', 'Joins': 'None'}
+2026-05-19 14:13:24,810 - INFO - Generating SQL for question: 'List all products' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:13:25,135 - INFO - Generated SQL: SELECT * FROM products
+2026-05-19 14:13:25,967 - INFO - Dynamically decomposing question: 'Get all customers'
+2026-05-19 14:13:26,297 - INFO - Successfully re-decomposed question dynamically: {'Intent': 'Retrieve all customers', 'Tables': 'customers', 'Columns': '*', 'Filters': 'None', 'Joins': 'None'}
+2026-05-19 14:13:26,297 - INFO - Generating SQL for question: 'Get all customers' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:13:26,567 - INFO - Generated SQL: SELECT * FROM customers
+2026-05-19 14:13:27,386 - INFO - Generating SQL for question: 'Show all orders' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:13:27,992 - INFO - Generated SQL: SELECT "orderNumber", "orderDate", "requiredDate", "shippedDate", "status", "comments", "customerNumber" 
+FROM orders
+2026-05-19 14:14:00,211 - INFO - Dynamically decomposing question: 'List all products'
+2026-05-19 14:14:01,020 - INFO - Successfully re-decomposed question dynamically: {'Intent': 'Retrieve all product details', 'Tables': 'products', 'Columns': '*', 'Filters': 'None', 'Joins': 'None'}
+2026-05-19 14:14:01,020 - INFO - Generating SQL for question: 'List all products' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:01,363 - INFO - Generated SQL: SELECT * FROM products
+2026-05-19 14:14:02,184 - INFO - Dynamically decomposing question: 'Get all customers'
+2026-05-19 14:14:02,459 - INFO - Successfully re-decomposed question dynamically: {'Intent': 'Retrieve all customers', 'Tables': 'customers', 'Columns': '*', 'Filters': 'None', 'Joins': 'None'}
+2026-05-19 14:14:02,460 - INFO - Generating SQL for question: 'Get all customers' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:02,824 - INFO - Generated SQL: SELECT * FROM customers
+2026-05-19 14:14:03,662 - INFO - Generating SQL for question: 'Show all orders' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:04,036 - INFO - Generated SQL: SELECT "orderNumber", "orderDate", "requiredDate", "shippedDate", "status", "comments", "customerNumber" 
+FROM orders
+2026-05-19 14:14:04,854 - INFO - Generating SQL for question: 'List all employees' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:05,215 - INFO - Generated SQL: SELECT "employeeNumber", "lastName", "firstName", "extension", "email", "officeCode", "reportsTo", "jobTitle" 
+FROM employees
+2026-05-19 14:14:06,051 - INFO - Generating SQL for question: 'Get all offices' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:06,307 - INFO - Generated SQL: SELECT "officeCode", "city", "phone", "addressLine1", "addressLine2", "state", "country", "postalCode", "territory" 
+FROM offices
+2026-05-19 14:14:07,131 - INFO - Generating SQL for question: 'Show all product lines' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:07,572 - INFO - Generated SQL: SELECT "productLine" FROM productlines
+2026-05-19 14:14:08,390 - INFO - Generating SQL for question: 'List all payments' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:08,686 - INFO - Generated SQL: SELECT "customerNumber", "checkNumber", "paymentDate", "amount" FROM payments
+2026-05-19 14:14:09,525 - INFO - Generating SQL for question: 'Get product names and prices' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:09,731 - INFO - Generated SQL: SELECT "productName", "buyPrice" FROM products
+2026-05-19 14:14:10,616 - INFO - Generating SQL for question: 'Get customer names and cities' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:11,083 - INFO - Generated SQL: SELECT "customerName", "city" FROM customers
+2026-05-19 14:14:11,903 - INFO - Generating SQL for question: 'List employee first and last names' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:12,389 - INFO - Generated SQL: SELECT "firstName", "lastName" FROM employees
+2026-05-19 14:14:13,221 - INFO - Generating SQL for question: 'Get all order dates' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:13,534 - INFO - Generated SQL: SELECT "orderDate" FROM orders
+2026-05-19 14:14:14,367 - INFO - Generating SQL for question: 'Show product vendor list' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:14,683 - INFO - Generated SQL: SELECT "productVendor" FROM products
+2026-05-19 14:14:15,507 - INFO - Generating SQL for question: 'Get all product codes' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:15,969 - INFO - Generated SQL: SELECT "productCode" FROM products
+2026-05-19 14:14:16,793 - INFO - Generating SQL for question: 'List all countries from offices' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:17,060 - INFO - Generated SQL: SELECT "country" FROM offices
+2026-05-19 14:14:17,877 - INFO - Generating SQL for question: 'Show all order statuses' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:18,568 - INFO - Generated SQL: SELECT "status" FROM orders
+2026-05-19 14:14:19,403 - INFO - Generating SQL for question: 'Get all payment amounts' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:19,807 - INFO - Generated SQL: SELECT "amount" FROM payments
+2026-05-19 14:14:20,626 - INFO - Generating SQL for question: 'List all job titles' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:20,992 - INFO - Generated SQL: SELECT "jobTitle" FROM employees
+2026-05-19 14:14:21,810 - INFO - Generating SQL for question: 'Get customer phone numbers' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:22,309 - INFO - Generated SQL: SELECT "phone" FROM customers
+2026-05-19 14:14:23,148 - INFO - Generating SQL for question: 'Show product MSRP values' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:23,447 - INFO - Generated SQL: SELECT "MSRP" FROM products
+2026-05-19 14:14:24,266 - INFO - Generating SQL for question: 'List order numbers' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:24,544 - INFO - Generated SQL: SELECT "orderNumber" FROM orders
+2026-05-19 14:14:25,379 - INFO - Generating SQL for question: 'Get orders with customer names' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:25,933 - INFO - Generated SQL: SELECT "orderNumber", "orderDate", "customerName" 
+FROM "orders" 
+JOIN "customers" 
+ON "orders"."customerNumber" = "customers"."customerNumber"
+2026-05-19 14:14:26,754 - INFO - Generating SQL for question: 'Get employees with office city' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:27,101 - INFO - Generated SQL: SELECT "firstName", "lastName", "city" 
+FROM "employees" 
+JOIN "offices" 
+ON "employees"."officeCode" = "offices"."officeCode"
+2026-05-19 14:14:27,945 - INFO - Generating SQL for question: 'Get payments with customer names' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:28,494 - INFO - Generated SQL: SELECT "checkNumber", "paymentDate", "amount", "customerName" 
+FROM "payments" 
+JOIN "customers" 
+ON "payments"."customerNumber" = "customers"."customerNumber"
+2026-05-19 14:14:29,321 - INFO - Generating SQL for question: 'Get order details with product names' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:29,986 - INFO - Generated SQL: SELECT "orderNumber", "orderdetails"."productCode", "quantityOrdered", "priceEach", "orderLineNumber", "productName" 
+FROM "orderdetails" 
+JOIN "products" ON "orderdetails"."productCode" = "products"."productCode"
+2026-05-19 14:14:30,818 - INFO - Generating SQL for question: 'Get products with product line description' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:31,089 - INFO - Generated SQL: SELECT p."productName", pl."textDescription" 
+FROM products p 
+JOIN productlines pl 
+ON p."productLine" = pl."productLine"
+2026-05-19 14:14:31,909 - INFO - Generating SQL for question: 'Get customers with sales rep names' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:32,414 - INFO - Generated SQL: SELECT "customerName", "firstName", "lastName" 
+FROM "customers" 
+JOIN "employees" 
+ON "customers"."salesRepEmployeeNumber" = "employees"."employeeNumber"
+2026-05-19 14:14:33,255 - INFO - Generating SQL for question: 'Get orders with customer city' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:33,709 - INFO - Generated SQL: SELECT "orderNumber", "orderDate", "city" 
+FROM "orders" 
+JOIN "customers" 
+ON "orders"."customerNumber" = "customers"."customerNumber"
+2026-05-19 14:14:34,546 - INFO - Generating SQL for question: 'Get employees and their manager' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:35,052 - INFO - Generated SQL: SELECT "firstName", "lastName", "reportsTo" 
+FROM employees
+2026-05-19 14:14:35,870 - INFO - Generating SQL for question: 'Get orderdetails with product vendor' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:38,396 - INFO - Generated SQL: SELECT "orderNumber", "productCode", "quantityOrdered", "priceEach", "orderLineNumber", "productVendor" 
+FROM "orderdetails" 
+JOIN "products" ON "orderdetails"."productCode" = "products"."productCode"
+2026-05-19 14:14:38,413 - WARNING - Failed SQL detected: SELECT "orderNumber", "productCode", "quantityOrdered", "priceEach", "orderLineNumber", "productVendor" 
+FROM "orderdetails" 
+JOIN "products" ON "orderdetails"."productCode" = "products"."productCode" | Error: column reference "productCode" is ambiguous
+LINE 1: SELECT "orderNumber", "productCode", "quantityOrdered", "pri...
+                              ^
+. Attempting self-correction.
+2026-05-19 14:14:40,925 - INFO - Self-Corrected SQL: SELECT "orderdetails"."orderNumber", "orderdetails"."productCode", "orderdetails"."quantityOrdered", "orderdetails"."priceEach", "orderdetails"."orderLineNumber", "products"."productVendor" 
+FROM "orderdetails" 
+JOIN "products" ON "orderdetails"."productCode" = "products"."productCode"
+2026-05-19 14:14:41,749 - INFO - Generating SQL for question: 'Get payments with customer country' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:44,148 - INFO - Generated SQL: SELECT "checkNumber", "paymentDate", "amount", "country" 
+FROM payments 
+JOIN customers 
+ON payments."customerNumber" = customers."customerNumber"
+2026-05-19 14:14:44,990 - INFO - Generating SQL for question: 'Count customers per country' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:47,371 - INFO - Generated SQL: SELECT "country", COUNT("customerNumber") 
+FROM customers 
+GROUP BY "country"
+2026-05-19 14:14:48,205 - INFO - Generating SQL for question: 'Total payments per customer' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:50,961 - INFO - Generated SQL: SELECT "customerNumber", SUM("amount") 
+FROM "customers" 
+JOIN "payments" ON "customers"."customerNumber" = "payments"."customerNumber" 
+GROUP BY "customerNumber"
+2026-05-19 14:14:50,992 - WARNING - Failed SQL detected: SELECT "customerNumber", SUM("amount") 
+FROM "customers" 
+JOIN "payments" ON "customers"."customerNumber" = "payments"."customerNumber" 
+GROUP BY "customerNumber" | Error: column reference "customerNumber" is ambiguous
+LINE 1: SELECT "customerNumber", SUM("amount") 
+               ^
+. Attempting self-correction.
+2026-05-19 14:14:53,452 - INFO - Self-Corrected SQL: SELECT "customers"."customerNumber", SUM("amount") 
+FROM "customers" 
+JOIN "payments" ON "customers"."customerNumber" = "payments"."customerNumber" 
+GROUP BY "customers"."customerNumber"
+2026-05-19 14:14:54,299 - INFO - Generating SQL for question: 'Number of orders per status' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:14:56,573 - INFO - Generated SQL: SELECT "status", COUNT("orderNumber") 
+FROM orders 
+GROUP BY "status"
+2026-05-19 14:14:57,392 - INFO - Generating SQL for question: 'Products per product line' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:00,015 - INFO - Generated SQL: SELECT "productLine", "productName" 
+FROM products 
+JOIN productlines 
+ON products."productLine" = productlines."productLine"
+2026-05-19 14:15:00,042 - WARNING - Failed SQL detected: SELECT "productLine", "productName" 
+FROM products 
+JOIN productlines 
+ON products."productLine" = productlines."productLine" | Error: column reference "productLine" is ambiguous
+LINE 1: SELECT "productLine", "productName" 
+               ^
+. Attempting self-correction.
+2026-05-19 14:15:02,605 - INFO - Self-Corrected SQL: SELECT p."productLine", p."productName" 
+FROM products p 
+JOIN productlines pl 
+ON p."productLine" = pl."productLine"
+2026-05-19 14:15:03,450 - INFO - Generating SQL for question: 'Employees per office' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:06,220 - INFO - Generated SQL: SELECT "officeCode", "city", COUNT("employeeNumber") 
+FROM "employees" 
+JOIN "offices" ON "employees"."officeCode" = "offices"."officeCode" 
+GROUP BY "officeCode", "city"
+2026-05-19 14:15:06,256 - WARNING - Failed SQL detected: SELECT "officeCode", "city", COUNT("employeeNumber") 
+FROM "employees" 
+JOIN "offices" ON "employees"."officeCode" = "offices"."officeCode" 
+GROUP BY "officeCode", "city" | Error: column reference "officeCode" is ambiguous
+LINE 1: SELECT "officeCode", "city", COUNT("employeeNumber") 
+               ^
+. Attempting self-correction.
+2026-05-19 14:15:09,003 - INFO - Self-Corrected SQL: SELECT "offices"."officeCode", "offices"."city", COUNT("employees"."employeeNumber") 
+FROM "employees" 
+JOIN "offices" ON "employees"."officeCode" = "offices"."officeCode" 
+GROUP BY "offices"."officeCode", "offices"."city"
+2026-05-19 14:15:09,823 - INFO - Generating SQL for question: 'Total stock per product vendor' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:12,289 - INFO - Generated SQL: SELECT "productVendor", SUM("quantityInStock") 
+FROM products 
+GROUP BY "productVendor"
+2026-05-19 14:15:13,131 - INFO - Generating SQL for question: 'Average buy price per product line' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:15,698 - INFO - Generated SQL: SELECT "productLine", AVG("buyPrice") 
+FROM products 
+GROUP BY "productLine"
+2026-05-19 14:15:16,531 - INFO - Generating SQL for question: 'Orders per customer' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:18,937 - INFO - Generated SQL: SELECT "customerName", "orderNumber" 
+FROM "customers" 
+JOIN "orders" 
+ON "orders"."customerNumber" = "customers"."customerNumber"
+2026-05-19 14:15:19,758 - INFO - Generating SQL for question: 'Max MSRP per product line' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:22,121 - INFO - Generated SQL: SELECT "productLine", MAX("MSRP") 
+FROM products 
+GROUP BY "productLine"
+2026-05-19 14:15:22,945 - INFO - Generating SQL for question: 'Min buy price per vendor' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:25,509 - INFO - Generated SQL: SELECT "productVendor", MIN("buyPrice") 
+FROM products 
+GROUP BY "productVendor"
+2026-05-19 14:15:26,350 - INFO - Generating SQL for question: 'Total number of customers' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:28,816 - INFO - Generated SQL: SELECT COUNT("customerNumber") FROM customers
+2026-05-19 14:15:29,654 - INFO - Generating SQL for question: 'Total number of products' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:32,176 - INFO - Generated SQL: SELECT COUNT("productCode") FROM products
+2026-05-19 14:15:32,995 - INFO - Generating SQL for question: 'Total revenue from payments' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:35,525 - INFO - Generated SQL: SELECT "amount" FROM payments
+2026-05-19 14:15:36,354 - INFO - Generating SQL for question: 'Average product price' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:38,807 - INFO - Generated SQL: SELECT AVG("buyPrice") FROM products
+2026-05-19 14:15:39,626 - INFO - Generating SQL for question: 'Max payment amount' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:42,034 - INFO - Generated SQL: SELECT MAX("amount") FROM payments
+2026-05-19 14:15:42,884 - INFO - Generating SQL for question: 'Min payment amount' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:45,452 - INFO - Generated SQL: SELECT MIN("amount") FROM payments
+2026-05-19 14:15:46,272 - INFO - Generating SQL for question: 'Count total orders' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:48,774 - INFO - Generated SQL: SELECT COUNT("orderNumber") FROM orders
+2026-05-19 14:15:49,593 - INFO - Generating SQL for question: 'Total quantity in stock' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:52,075 - INFO - Generated SQL: SELECT "quantityInStock" FROM products
+2026-05-19 14:15:52,895 - INFO - Generating SQL for question: 'Average MSRP' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:55,772 - INFO - Generated SQL: SELECT AVG("MSRP") FROM products
+2026-05-19 14:15:56,593 - INFO - Generating SQL for question: 'Number of employees' using model 'llama-3.3-70b-versatile'
+2026-05-19 14:15:59,148 - INFO - Generated SQL: SELECT COUNT("employeeNumber") FROM employees
+2026-05-19 09:37:13,419 - INFO - Dynamically decomposing question: 'Get all customers'
+2026-05-19 09:37:14,108 - INFO - Successfully re-decomposed question dynamically: {'Intent': 'Retrieve all customers', 'Tables': 'customers', 'Columns': '*', 'Filters': 'None', 'Joins': 'None'}
+2026-05-19 09:37:14,108 - INFO - Generating SQL for question: 'Get all customers' using model 'llama-3.3-70b-versatile'
+2026-05-19 09:37:14,459 - INFO - Generated SQL: SELECT * FROM customers
+2026-05-19 09:38:27,160 - INFO - Generating SQL for question: 'Show all product lines' using model 'llama-3.3-70b-versatile'
+2026-05-19 09:38:27,507 - INFO - Generated SQL: SELECT "productLine" FROM productlines
+2026-05-19 09:44:14,531 - INFO - Dynamically decomposing question: 'delete customers'
+2026-05-19 09:44:14,923 - INFO - Successfully re-decomposed question dynamically: {'Intent': 'Delete all customers', 'Tables': 'customers', 'Columns': 'None', 'Filters': 'None', 'Joins': 'None'}
+2026-05-19 09:44:14,923 - INFO - Generating SQL for question: 'delete customers' using model 'llama-3.3-70b-versatile'
+2026-05-19 09:44:15,235 - INFO - Generated SQL: SELECT * FROM "customers"
+2026-05-19 09:44:47,098 - INFO - Dynamically decomposing question: 'shitty shit'
+2026-05-19 09:44:47,655 - INFO - Successfully re-decomposed question dynamically: {'Intent': 'Unknown', 'Tables': 'None', 'Columns': 'None', 'Filters': 'None', 'Joins': 'None'}
+2026-05-19 09:44:47,655 - INFO - Generating SQL for question: 'shitty shit' using model 'llama-3.3-70b-versatile'
+2026-05-19 09:44:48,203 - INFO - Generated SQL: SELECT * FROM information_schema.tables
+2026-05-19 09:47:19,822 - INFO - Dynamically decomposing question: 'List all products'
+2026-05-19 09:47:20,195 - INFO - Successfully re-decomposed question dynamically: {'Intent': 'Retrieve all product details', 'Tables': 'products', 'Columns': '*', 'Filters': 'None', 'Joins': 'None'}
+2026-05-19 09:47:20,196 - INFO - Generating SQL for question: 'List all products' using model 'llama-3.3-70b-versatile'
+2026-05-19 09:47:20,510 - INFO - Generated SQL: SELECT * FROM products
+2026-05-19 09:47:33,577 - INFO - Generating SQL for question: 'List all countries from offices' using model 'llama-3.3-70b-versatile'
+2026-05-19 09:47:33,913 - INFO - Generated SQL: SELECT "country" FROM offices
+2026-05-19 09:47:53,097 - INFO - Generating SQL for question: 'List all job titles' using model 'llama-3.3-70b-versatile'
+2026-05-19 09:47:53,303 - INFO - Generated SQL: SELECT "jobTitle" FROM employees
+2026-05-19 09:48:00,308 - INFO - Generating SQL for question: 'Get orderdetails with product vendor' using model 'llama-3.3-70b-versatile'
+2026-05-19 09:48:00,898 - INFO - Generated SQL: SELECT "orderNumber", "productCode", "quantityOrdered", "priceEach", "orderLineNumber", "productVendor" 
+FROM "orderdetails" 
+JOIN "products" ON "orderdetails"."productCode" = "products"."productCode"
+2026-05-19 09:48:00,915 - WARNING - Failed SQL detected: SELECT "orderNumber", "productCode", "quantityOrdered", "priceEach", "orderLineNumber", "productVendor" 
+FROM "orderdetails" 
+JOIN "products" ON "orderdetails"."productCode" = "products"."productCode" | Error: column reference "productCode" is ambiguous
+LINE 1: SELECT "orderNumber", "productCode", "quantityOrdered", "pri...
+                              ^
+. Attempting self-correction.
+2026-05-19 09:48:01,318 - INFO - Self-Corrected SQL: SELECT "orderdetails"."orderNumber", "orderdetails"."productCode", "orderdetails"."quantityOrdered", "orderdetails"."priceEach", "orderdetails"."orderLineNumber", "products"."productVendor" 
+FROM "orderdetails" 
+JOIN "products" ON "orderdetails"."productCode" = "products"."productCode"
+2026-05-19 09:49:16,233 - INFO - Dynamically decomposing question: 'S10_1678 update this product with product line as "abcd"'
+2026-05-19 09:49:16,860 - INFO - Successfully re-decomposed question dynamically: {'Intent': 'Update product details', 'Tables': 'products', 'Columns': 'productLine', 'Filters': "productCode = 'S10_1678'", 'Joins': 'None'}
+2026-05-19 09:49:16,860 - INFO - Generating SQL for question: 'S10_1678 update this product with product line as "abcd"' using model 'llama-3.3-70b-versatile'
+2026-05-19 09:49:17,422 - INFO - Generated SQL: SELECT "productLine" FROM products WHERE "productCode" = 'S10_1678'
+2026-05-19 10:30:53,403 - INFO - Dynamically decomposing question: 'How many orders have been placed?'
+2026-05-19 10:30:54,030 - INFO - FastAPI Decomposition Step: {"Intent": "Count total orders", "Tables": "orders", "Columns": "orderNumber", "Filters": "None", "Joins": "None"}
+2026-05-19 10:30:54,030 - INFO - Generating SQL for question: 'How many orders have been placed?' using model 'llama-3.3-70b-versatile'
+2026-05-19 10:30:54,578 - INFO - Generated SQL: SELECT COUNT("orderNumber") FROM orders
+2026-05-19 10:30:54,578 - INFO - FastAPI Generated SQL: SELECT COUNT("orderNumber") FROM orders
+2026-05-19 10:30:56,302 - INFO - Dynamically decomposing question: 'Total payments per customer'
+2026-05-19 10:30:57,094 - INFO - FastAPI Decomposition Step: {"Intent": "Total payments per customer", "Tables": ["customers", "payments"], "Columns": ["customerNumber", "amount"], "Filters": "None", "Joins": "payments.customerNumber = customers.customerNumber"}
+2026-05-19 10:30:57,095 - INFO - Generating SQL for question: 'Total payments per customer' using model 'llama-3.3-70b-versatile'
+2026-05-19 10:30:57,575 - INFO - Generated SQL: SELECT "customerNumber", SUM("amount") 
+FROM "customers" 
+JOIN "payments" ON "payments"."customerNumber" = "customers"."customerNumber" 
+GROUP BY "customerNumber"
+2026-05-19 10:30:57,575 - INFO - FastAPI Generated SQL: SELECT "customerNumber", SUM("amount") 
+FROM "customers" 
+JOIN "payments" ON "payments"."customerNumber" = "customers"."customerNumber" 
+GROUP BY "customerNumber"
+2026-05-19 10:30:57,588 - WARNING - FastAPI Attempt 1 failed: column reference "customerNumber" is ambiguous
+LINE 1: SELECT "customerNumber", SUM("amount") 
+               ^
+. Fixing query...
+2026-05-19 10:30:57,589 - WARNING - Failed SQL detected: SELECT "customerNumber", SUM("amount") 
+FROM "customers" 
+JOIN "payments" ON "payments"."customerNumber" = "customers"."customerNumber" 
+GROUP BY "customerNumber" | Error: column reference "customerNumber" is ambiguous
+LINE 1: SELECT "customerNumber", SUM("amount") 
+               ^
+. Attempting self-correction.
+2026-05-19 10:30:58,698 - INFO - Self-Corrected SQL: SELECT "customers"."customerNumber", SUM("amount") 
+FROM "customers" 
+JOIN "payments" ON "payments"."customerNumber" = "customers"."customerNumber" 
+GROUP BY "customers"."customerNumber"
+2026-05-19 10:36:48,902 - INFO - Dynamically decomposing question: 'list customers'
+2026-05-19 10:36:49,404 - INFO - FastAPI Decomposition Step: {"Intent": "List all customers", "Tables": "customers", "Columns": "*", "Filters": "None", "Joins": "None"}
+2026-05-19 10:36:49,404 - INFO - Generating SQL for question: 'list customers' using model 'llama-3.3-70b-versatile'
+2026-05-19 10:36:50,383 - INFO - Generated SQL: SELECT * FROM customers
+2026-05-19 10:36:50,383 - INFO - FastAPI Generated SQL: SELECT * FROM customers
+2026-05-19 10:41:04,870 - INFO - Dynamically decomposing question: 'list of ordered products by customers'
+2026-05-19 10:41:05,992 - INFO - FastAPI Decomposition Step: {"Intent": "Retrieve ordered products by customers", "Tables": ["orders", "orderdetails", "products", "customers"], "Columns": ["productName", "customerName", "orderNumber", "quantityOrdered"], "Filters": "None", "Joins": "orders.customerNumber = customers.customerNumber AND orders.orderNumber = orderdetails.orderNumber AND orderdetails.productCode = products.productCode"}
+2026-05-19 10:41:05,992 - INFO - Generating SQL for question: 'list of ordered products by customers' using model 'llama-3.3-70b-versatile'
+2026-05-19 10:41:07,112 - INFO - Generated SQL: SELECT p."productName", c."customerName", o."orderNumber", od."quantityOrdered" 
+FROM "orders" o 
+JOIN "customers" c ON o."customerNumber" = c."customerNumber" 
+JOIN "orderdetails" od ON o."orderNumber" = od."orderNumber" 
+JOIN "products" p ON od."productCode" = p."productCode"
+2026-05-19 10:41:07,112 - INFO - FastAPI Generated SQL: SELECT p."productName", c."customerName", o."orderNumber", od."quantityOrdered" 
+FROM "orders" o 
+JOIN "customers" c ON o."customerNumber" = c."customerNumber" 
+JOIN "orderdetails" od ON o."orderNumber" = od."orderNumber" 
+JOIN "products" p ON od."productCode" = p."productCode"

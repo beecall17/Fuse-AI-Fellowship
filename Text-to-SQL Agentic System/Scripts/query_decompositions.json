@@ -1,0 +1,559 @@
+[
+  {
+    "question": "List all products",
+    "Intent": "Error decomposing question",
+    "Tables": "None",
+    "Columns": "None",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Get all customers",
+    "Intent": "Error decomposing question",
+    "Tables": "None",
+    "Columns": "None",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Show all orders",
+    "Intent": "Retrieve all order details",
+    "Tables": "orders",
+    "Columns": [
+      "orderNumber",
+      "orderDate",
+      "requiredDate",
+      "shippedDate",
+      "status",
+      "comments",
+      "customerNumber"
+    ],
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "List all employees",
+    "Intent": "List all employees",
+    "Tables": "employees",
+    "Columns": [
+      "employeeNumber",
+      "lastName",
+      "firstName",
+      "extension",
+      "email",
+      "officeCode",
+      "reportsTo",
+      "jobTitle"
+    ],
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Get all offices",
+    "Intent": "Retrieve all office details",
+    "Tables": "offices",
+    "Columns": [
+      "officeCode",
+      "city",
+      "phone",
+      "addressLine1",
+      "addressLine2",
+      "state",
+      "country",
+      "postalCode",
+      "territory"
+    ],
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Show all product lines",
+    "Intent": "Retrieve all product lines",
+    "Tables": "productlines",
+    "Columns": "productLine",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "List all payments",
+    "Intent": "List all payments",
+    "Tables": "payments",
+    "Columns": [
+      "customerNumber",
+      "checkNumber",
+      "paymentDate",
+      "amount"
+    ],
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Get product names and prices",
+    "Intent": "Retrieve product names and prices",
+    "Tables": "products",
+    "Columns": [
+      "productName",
+      "buyPrice"
+    ],
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Get customer names and cities",
+    "Intent": "Retrieve customer names along with their cities",
+    "Tables": [
+      "customers"
+    ],
+    "Columns": [
+      "customerName",
+      "city"
+    ],
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "List employee first and last names",
+    "Intent": "Retrieve employee names",
+    "Tables": "employees",
+    "Columns": [
+      "firstName",
+      "lastName"
+    ],
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Get all order dates",
+    "Intent": "Retrieve all order dates",
+    "Tables": "orders",
+    "Columns": "orderDate",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Show product vendor list",
+    "Intent": "Retrieve product vendor list",
+    "Tables": "products",
+    "Columns": "productVendor",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Get all product codes",
+    "Intent": "Retrieve all product codes",
+    "Tables": "products",
+    "Columns": "productCode",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "List all countries from offices",
+    "Intent": "List all countries from offices",
+    "Tables": "offices",
+    "Columns": "country",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Show all order statuses",
+    "Intent": "Retrieve all order statuses",
+    "Tables": "orders",
+    "Columns": "status",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Get all payment amounts",
+    "Intent": "Retrieve all payment amounts",
+    "Tables": "payments",
+    "Columns": "amount",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "List all job titles",
+    "Intent": "List all job titles",
+    "Tables": "employees",
+    "Columns": "jobTitle",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Get customer phone numbers",
+    "Intent": "Retrieve customer phone numbers",
+    "Tables": "customers",
+    "Columns": "phone",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Show product MSRP values",
+    "Intent": "Retrieve product MSRP values",
+    "Tables": "products",
+    "Columns": "MSRP",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "List order numbers",
+    "Intent": "List order numbers",
+    "Tables": "orders",
+    "Columns": "orderNumber",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Get orders with customer names",
+    "Intent": "Retrieve orders with customer names",
+    "Tables": [
+      "orders",
+      "customers"
+    ],
+    "Columns": [
+      "orderNumber",
+      "orderDate",
+      "customerName"
+    ],
+    "Filters": "None",
+    "Joins": "orders.customerNumber = customers.customerNumber"
+  },
+  {
+    "question": "Get employees with office city",
+    "Intent": "Retrieve employees along with their office city",
+    "Tables": [
+      "employees",
+      "offices"
+    ],
+    "Columns": [
+      "firstName",
+      "lastName",
+      "city"
+    ],
+    "Filters": "None",
+    "Joins": "employees.officeCode = offices.officeCode"
+  },
+  {
+    "question": "Get payments with customer names",
+    "Intent": "Retrieve payments with customer names",
+    "Tables": [
+      "payments",
+      "customers"
+    ],
+    "Columns": [
+      "checkNumber",
+      "paymentDate",
+      "amount",
+      "customerName"
+    ],
+    "Filters": "None",
+    "Joins": "payments.customerNumber = customers.customerNumber"
+  },
+  {
+    "question": "Get order details with product names",
+    "Intent": "Retrieve order details with product names",
+    "Tables": [
+      "orderdetails",
+      "products"
+    ],
+    "Columns": [
+      "orderNumber",
+      "productCode",
+      "quantityOrdered",
+      "priceEach",
+      "orderLineNumber",
+      "productName"
+    ],
+    "Filters": "None",
+    "Joins": "orderdetails.productCode = products.productCode"
+  },
+  {
+    "question": "Get products with product line description",
+    "Intent": "Retrieve products along with their product line descriptions",
+    "Tables": [
+      "products",
+      "productlines"
+    ],
+    "Columns": [
+      "productName",
+      "textDescription"
+    ],
+    "Filters": "None",
+    "Joins": "products.productLine = productlines.productLine"
+  },
+  {
+    "question": "Get customers with sales rep names",
+    "Intent": "Retrieve customer names along with their sales rep names",
+    "Tables": [
+      "customers",
+      "employees"
+    ],
+    "Columns": [
+      "customerName",
+      "firstName",
+      "lastName"
+    ],
+    "Filters": "None",
+    "Joins": "customers.salesRepEmployeeNumber = employees.employeeNumber"
+  },
+  {
+    "question": "Get orders with customer city",
+    "Intent": "Retrieve orders with customer city",
+    "Tables": [
+      "orders",
+      "customers"
+    ],
+    "Columns": [
+      "orderNumber",
+      "orderDate",
+      "city"
+    ],
+    "Filters": "None",
+    "Joins": "orders.customerNumber = customers.customerNumber"
+  },
+  {
+    "question": "Get employees and their manager",
+    "Intent": "Retrieve employee names along with their manager names",
+    "Tables": [
+      "employees"
+    ],
+    "Columns": [
+      "firstName",
+      "lastName",
+      "reportsTo"
+    ],
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Get orderdetails with product vendor",
+    "Intent": "Retrieve order details with product vendor",
+    "Tables": [
+      "orderdetails",
+      "products"
+    ],
+    "Columns": [
+      "orderNumber",
+      "productCode",
+      "quantityOrdered",
+      "priceEach",
+      "orderLineNumber",
+      "productVendor"
+    ],
+    "Filters": "None",
+    "Joins": "orderdetails.productCode = products.productCode"
+  },
+  {
+    "question": "Get payments with customer country",
+    "Intent": "Retrieve payments with customer country",
+    "Tables": [
+      "payments",
+      "customers"
+    ],
+    "Columns": [
+      "checkNumber",
+      "paymentDate",
+      "amount",
+      "country"
+    ],
+    "Filters": "None",
+    "Joins": "payments.customerNumber = customers.customerNumber"
+  },
+  {
+    "question": "Count customers per country",
+    "Intent": "Count customers per country",
+    "Tables": "customers",
+    "Columns": "country, customerNumber",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Total payments per customer",
+    "Intent": "Calculate total payments per customer",
+    "Tables": [
+      "customers",
+      "payments"
+    ],
+    "Columns": [
+      "customerNumber",
+      "amount"
+    ],
+    "Filters": "None",
+    "Joins": "customers.customerNumber = payments.customerNumber"
+  },
+  {
+    "question": "Number of orders per status",
+    "Intent": "Count orders per status",
+    "Tables": "orders",
+    "Columns": "status, orderNumber",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Products per product line",
+    "Intent": "Retrieve products per product line",
+    "Tables": [
+      "products",
+      "productlines"
+    ],
+    "Columns": [
+      "productLine",
+      "productName"
+    ],
+    "Filters": "None",
+    "Joins": "products.productLine = productlines.productLine"
+  },
+  {
+    "question": "Employees per office",
+    "Intent": "Retrieve employee count per office",
+    "Tables": [
+      "employees",
+      "offices"
+    ],
+    "Columns": [
+      "officeCode",
+      "city"
+    ],
+    "Filters": "None",
+    "Joins": "employees.officeCode = offices.officeCode"
+  },
+  {
+    "question": "Total stock per product vendor",
+    "Intent": "Calculate total stock per product vendor",
+    "Tables": "products",
+    "Columns": [
+      "productVendor",
+      "quantityInStock"
+    ],
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Average buy price per product line",
+    "Intent": "Calculate average buy price per product line",
+    "Tables": [
+      "products"
+    ],
+    "Columns": [
+      "productLine",
+      "buyPrice"
+    ],
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Orders per customer",
+    "Intent": "Retrieve orders per customer",
+    "Tables": [
+      "customers",
+      "orders"
+    ],
+    "Columns": [
+      "customerName",
+      "orderNumber"
+    ],
+    "Filters": "None",
+    "Joins": "orders.customerNumber = customers.customerNumber"
+  },
+  {
+    "question": "Max MSRP per product line",
+    "Intent": "Retrieve max MSRP per product line",
+    "Tables": "products",
+    "Columns": [
+      "productLine",
+      "MSRP"
+    ],
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Min buy price per vendor",
+    "Intent": "Retrieve minimum buy price per vendor",
+    "Tables": "products",
+    "Columns": [
+      "productVendor",
+      "buyPrice"
+    ],
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Total number of customers",
+    "Intent": "Count total customers",
+    "Tables": "customers",
+    "Columns": "customerNumber",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Total number of products",
+    "Intent": "Count total products",
+    "Tables": "products",
+    "Columns": "productCode",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Total revenue from payments",
+    "Intent": "Calculate total revenue from payments",
+    "Tables": "payments",
+    "Columns": "amount",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Average product price",
+    "Intent": "Calculate average product price",
+    "Tables": "products",
+    "Columns": "buyPrice",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Max payment amount",
+    "Intent": "Find max payment amount",
+    "Tables": "payments",
+    "Columns": "amount",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Min payment amount",
+    "Intent": "Find minimum payment amount",
+    "Tables": "payments",
+    "Columns": "amount",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Count total orders",
+    "Intent": "Count total orders",
+    "Tables": "orders",
+    "Columns": "orderNumber",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Total quantity in stock",
+    "Intent": "Retrieve total quantity in stock",
+    "Tables": "products",
+    "Columns": "quantityInStock",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Average MSRP",
+    "Intent": "Calculate average MSRP",
+    "Tables": "products",
+    "Columns": "MSRP",
+    "Filters": "None",
+    "Joins": "None"
+  },
+  {
+    "question": "Number of employees",
+    "Intent": "Count total employees",
+    "Tables": "employees",
+    "Columns": "employeeNumber",
+    "Filters": "None",
+    "Joins": "None"
+  }
+]

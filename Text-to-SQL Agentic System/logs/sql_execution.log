@@ -1,0 +1,263 @@
+2026-05-19 14:12:42,271 - INFO - Attempting execution of SQL: SELECT * FROM information_schema.tables
+2026-05-19 14:12:42,334 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 217
+2026-05-19 14:12:43,612 - INFO - Attempting execution of SQL: SELECT * FROM information_schema.tables
+2026-05-19 14:12:43,643 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 217
+2026-05-19 14:12:44,762 - INFO - Attempting execution of SQL: SELECT "orderNumber", "orderDate", "requiredDate", "shippedDate", "status", "comments", "customerNumber" 
+FROM orders
+2026-05-19 14:12:44,789 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 326
+2026-05-19 14:13:25,135 - INFO - Attempting execution of SQL: SELECT * FROM products
+2026-05-19 14:13:25,166 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 110
+2026-05-19 14:13:26,567 - INFO - Attempting execution of SQL: SELECT * FROM customers
+2026-05-19 14:13:26,584 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 122
+2026-05-19 14:13:27,993 - INFO - Attempting execution of SQL: SELECT "orderNumber", "orderDate", "requiredDate", "shippedDate", "status", "comments", "customerNumber" 
+FROM orders
+2026-05-19 14:13:28,022 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 326
+2026-05-19 14:14:01,363 - INFO - Attempting execution of SQL: SELECT * FROM products
+2026-05-19 14:14:01,383 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 110
+2026-05-19 14:14:02,824 - INFO - Attempting execution of SQL: SELECT * FROM customers
+2026-05-19 14:14:02,860 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 122
+2026-05-19 14:14:04,036 - INFO - Attempting execution of SQL: SELECT "orderNumber", "orderDate", "requiredDate", "shippedDate", "status", "comments", "customerNumber" 
+FROM orders
+2026-05-19 14:14:04,052 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 326
+2026-05-19 14:14:05,215 - INFO - Attempting execution of SQL: SELECT "employeeNumber", "lastName", "firstName", "extension", "email", "officeCode", "reportsTo", "jobTitle" 
+FROM employees
+2026-05-19 14:14:05,249 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 23
+2026-05-19 14:14:06,307 - INFO - Attempting execution of SQL: SELECT "officeCode", "city", "phone", "addressLine1", "addressLine2", "state", "country", "postalCode", "territory" 
+FROM offices
+2026-05-19 14:14:06,329 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 7
+2026-05-19 14:14:07,572 - INFO - Attempting execution of SQL: SELECT "productLine" FROM productlines
+2026-05-19 14:14:07,588 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 7
+2026-05-19 14:14:08,686 - INFO - Attempting execution of SQL: SELECT "customerNumber", "checkNumber", "paymentDate", "amount" FROM payments
+2026-05-19 14:14:08,723 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 273
+2026-05-19 14:14:09,732 - INFO - Attempting execution of SQL: SELECT "productName", "buyPrice" FROM products
+2026-05-19 14:14:09,811 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 110
+2026-05-19 14:14:11,083 - INFO - Attempting execution of SQL: SELECT "customerName", "city" FROM customers
+2026-05-19 14:14:11,100 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 122
+2026-05-19 14:14:12,389 - INFO - Attempting execution of SQL: SELECT "firstName", "lastName" FROM employees
+2026-05-19 14:14:12,418 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 23
+2026-05-19 14:14:13,534 - INFO - Attempting execution of SQL: SELECT "orderDate" FROM orders
+2026-05-19 14:14:13,565 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 326
+2026-05-19 14:14:14,683 - INFO - Attempting execution of SQL: SELECT "productVendor" FROM products
+2026-05-19 14:14:14,704 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 110
+2026-05-19 14:14:15,970 - INFO - Attempting execution of SQL: SELECT "productCode" FROM products
+2026-05-19 14:14:15,990 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 110
+2026-05-19 14:14:17,060 - INFO - Attempting execution of SQL: SELECT "country" FROM offices
+2026-05-19 14:14:17,074 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 7
+2026-05-19 14:14:18,568 - INFO - Attempting execution of SQL: SELECT "status" FROM orders
+2026-05-19 14:14:18,600 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 326
+2026-05-19 14:14:19,807 - INFO - Attempting execution of SQL: SELECT "amount" FROM payments
+2026-05-19 14:14:19,823 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 273
+2026-05-19 14:14:20,992 - INFO - Attempting execution of SQL: SELECT "jobTitle" FROM employees
+2026-05-19 14:14:21,008 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 23
+2026-05-19 14:14:22,309 - INFO - Attempting execution of SQL: SELECT "phone" FROM customers
+2026-05-19 14:14:22,345 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 122
+2026-05-19 14:14:23,448 - INFO - Attempting execution of SQL: SELECT "MSRP" FROM products
+2026-05-19 14:14:23,462 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 110
+2026-05-19 14:14:24,544 - INFO - Attempting execution of SQL: SELECT "orderNumber" FROM orders
+2026-05-19 14:14:24,576 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 326
+2026-05-19 14:14:25,933 - INFO - Attempting execution of SQL: SELECT "orderNumber", "orderDate", "customerName" 
+FROM "orders" 
+JOIN "customers" 
+ON "orders"."customerNumber" = "customers"."customerNumber"
+2026-05-19 14:14:25,950 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 326
+2026-05-19 14:14:27,101 - INFO - Attempting execution of SQL: SELECT "firstName", "lastName", "city" 
+FROM "employees" 
+JOIN "offices" 
+ON "employees"."officeCode" = "offices"."officeCode"
+2026-05-19 14:14:27,142 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 23
+2026-05-19 14:14:28,494 - INFO - Attempting execution of SQL: SELECT "checkNumber", "paymentDate", "amount", "customerName" 
+FROM "payments" 
+JOIN "customers" 
+ON "payments"."customerNumber" = "customers"."customerNumber"
+2026-05-19 14:14:28,518 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 273
+2026-05-19 14:14:29,986 - INFO - Attempting execution of SQL: SELECT "orderNumber", "orderdetails"."productCode", "quantityOrdered", "priceEach", "orderLineNumber", "productName" 
+FROM "orderdetails" 
+JOIN "products" ON "orderdetails"."productCode" = "products"."productCode"
+2026-05-19 14:14:30,015 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 2996
+2026-05-19 14:14:31,089 - INFO - Attempting execution of SQL: SELECT p."productName", pl."textDescription" 
+FROM products p 
+JOIN productlines pl 
+ON p."productLine" = pl."productLine"
+2026-05-19 14:14:31,106 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 110
+2026-05-19 14:14:32,415 - INFO - Attempting execution of SQL: SELECT "customerName", "firstName", "lastName" 
+FROM "customers" 
+JOIN "employees" 
+ON "customers"."salesRepEmployeeNumber" = "employees"."employeeNumber"
+2026-05-19 14:14:32,451 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 100
+2026-05-19 14:14:33,710 - INFO - Attempting execution of SQL: SELECT "orderNumber", "orderDate", "city" 
+FROM "orders" 
+JOIN "customers" 
+ON "orders"."customerNumber" = "customers"."customerNumber"
+2026-05-19 14:14:33,741 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 326
+2026-05-19 14:14:35,052 - INFO - Attempting execution of SQL: SELECT "firstName", "lastName", "reportsTo" 
+FROM employees
+2026-05-19 14:14:35,066 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 23
+2026-05-19 14:14:38,396 - INFO - Attempting execution of SQL: SELECT "orderNumber", "productCode", "quantityOrdered", "priceEach", "orderLineNumber", "productVendor" 
+FROM "orderdetails" 
+JOIN "products" ON "orderdetails"."productCode" = "products"."productCode"
+2026-05-19 14:14:38,412 - ERROR - Execution Failed. Error: column reference "productCode" is ambiguous
+LINE 1: SELECT "orderNumber", "productCode", "quantityOrdered", "pri...
+                              ^
+
+2026-05-19 14:14:40,925 - INFO - Attempting execution of SQL: SELECT "orderdetails"."orderNumber", "orderdetails"."productCode", "orderdetails"."quantityOrdered", "orderdetails"."priceEach", "orderdetails"."orderLineNumber", "products"."productVendor" 
+FROM "orderdetails" 
+JOIN "products" ON "orderdetails"."productCode" = "products"."productCode"
+2026-05-19 14:14:40,946 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 2996
+2026-05-19 14:14:44,148 - INFO - Attempting execution of SQL: SELECT "checkNumber", "paymentDate", "amount", "country" 
+FROM payments 
+JOIN customers 
+ON payments."customerNumber" = customers."customerNumber"
+2026-05-19 14:14:44,186 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 273
+2026-05-19 14:14:47,371 - INFO - Attempting execution of SQL: SELECT "country", COUNT("customerNumber") 
+FROM customers 
+GROUP BY "country"
+2026-05-19 14:14:47,401 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 28
+2026-05-19 14:14:50,961 - INFO - Attempting execution of SQL: SELECT "customerNumber", SUM("amount") 
+FROM "customers" 
+JOIN "payments" ON "customers"."customerNumber" = "payments"."customerNumber" 
+GROUP BY "customerNumber"
+2026-05-19 14:14:50,992 - ERROR - Execution Failed. Error: column reference "customerNumber" is ambiguous
+LINE 1: SELECT "customerNumber", SUM("amount") 
+               ^
+
+2026-05-19 14:14:53,452 - INFO - Attempting execution of SQL: SELECT "customers"."customerNumber", SUM("amount") 
+FROM "customers" 
+JOIN "payments" ON "customers"."customerNumber" = "payments"."customerNumber" 
+GROUP BY "customers"."customerNumber"
+2026-05-19 14:14:53,495 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 98
+2026-05-19 14:14:56,573 - INFO - Attempting execution of SQL: SELECT "status", COUNT("orderNumber") 
+FROM orders 
+GROUP BY "status"
+2026-05-19 14:14:56,589 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 6
+2026-05-19 14:15:00,015 - INFO - Attempting execution of SQL: SELECT "productLine", "productName" 
+FROM products 
+JOIN productlines 
+ON products."productLine" = productlines."productLine"
+2026-05-19 14:15:00,042 - ERROR - Execution Failed. Error: column reference "productLine" is ambiguous
+LINE 1: SELECT "productLine", "productName" 
+               ^
+
+2026-05-19 14:15:02,605 - INFO - Attempting execution of SQL: SELECT p."productLine", p."productName" 
+FROM products p 
+JOIN productlines pl 
+ON p."productLine" = pl."productLine"
+2026-05-19 14:15:02,645 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 110
+2026-05-19 14:15:06,220 - INFO - Attempting execution of SQL: SELECT "officeCode", "city", COUNT("employeeNumber") 
+FROM "employees" 
+JOIN "offices" ON "employees"."officeCode" = "offices"."officeCode" 
+GROUP BY "officeCode", "city"
+2026-05-19 14:15:06,256 - ERROR - Execution Failed. Error: column reference "officeCode" is ambiguous
+LINE 1: SELECT "officeCode", "city", COUNT("employeeNumber") 
+               ^
+
+2026-05-19 14:15:09,003 - INFO - Attempting execution of SQL: SELECT "offices"."officeCode", "offices"."city", COUNT("employees"."employeeNumber") 
+FROM "employees" 
+JOIN "offices" ON "employees"."officeCode" = "offices"."officeCode" 
+GROUP BY "offices"."officeCode", "offices"."city"
+2026-05-19 14:15:09,019 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 7
+2026-05-19 14:15:12,289 - INFO - Attempting execution of SQL: SELECT "productVendor", SUM("quantityInStock") 
+FROM products 
+GROUP BY "productVendor"
+2026-05-19 14:15:12,327 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 13
+2026-05-19 14:15:15,699 - INFO - Attempting execution of SQL: SELECT "productLine", AVG("buyPrice") 
+FROM products 
+GROUP BY "productLine"
+2026-05-19 14:15:15,726 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 7
+2026-05-19 14:15:18,937 - INFO - Attempting execution of SQL: SELECT "customerName", "orderNumber" 
+FROM "customers" 
+JOIN "orders" 
+ON "orders"."customerNumber" = "customers"."customerNumber"
+2026-05-19 14:15:18,953 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 326
+2026-05-19 14:15:22,121 - INFO - Attempting execution of SQL: SELECT "productLine", MAX("MSRP") 
+FROM products 
+GROUP BY "productLine"
+2026-05-19 14:15:22,140 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 7
+2026-05-19 14:15:25,509 - INFO - Attempting execution of SQL: SELECT "productVendor", MIN("buyPrice") 
+FROM products 
+GROUP BY "productVendor"
+2026-05-19 14:15:25,545 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 13
+2026-05-19 14:15:28,816 - INFO - Attempting execution of SQL: SELECT COUNT("customerNumber") FROM customers
+2026-05-19 14:15:28,850 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 1
+2026-05-19 14:15:32,176 - INFO - Attempting execution of SQL: SELECT COUNT("productCode") FROM products
+2026-05-19 14:15:32,191 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 1
+2026-05-19 14:15:35,525 - INFO - Attempting execution of SQL: SELECT "amount" FROM payments
+2026-05-19 14:15:35,550 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 273
+2026-05-19 14:15:38,807 - INFO - Attempting execution of SQL: SELECT AVG("buyPrice") FROM products
+2026-05-19 14:15:38,821 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 1
+2026-05-19 14:15:42,034 - INFO - Attempting execution of SQL: SELECT MAX("amount") FROM payments
+2026-05-19 14:15:42,079 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 1
+2026-05-19 14:15:45,452 - INFO - Attempting execution of SQL: SELECT MIN("amount") FROM payments
+2026-05-19 14:15:45,468 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 1
+2026-05-19 14:15:48,774 - INFO - Attempting execution of SQL: SELECT COUNT("orderNumber") FROM orders
+2026-05-19 14:15:48,789 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 1
+2026-05-19 14:15:52,076 - INFO - Attempting execution of SQL: SELECT "quantityInStock" FROM products
+2026-05-19 14:15:52,090 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 110
+2026-05-19 14:15:55,773 - INFO - Attempting execution of SQL: SELECT AVG("MSRP") FROM products
+2026-05-19 14:15:55,788 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 1
+2026-05-19 14:15:59,148 - INFO - Attempting execution of SQL: SELECT COUNT("employeeNumber") FROM employees
+2026-05-19 14:15:59,164 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 1
+2026-05-19 09:37:14,460 - INFO - Attempting execution of SQL: SELECT * FROM customers
+2026-05-19 09:37:14,483 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 122
+2026-05-19 09:38:27,508 - INFO - Attempting execution of SQL: SELECT "productLine" FROM productlines
+2026-05-19 09:38:27,524 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 7
+2026-05-19 09:44:15,236 - INFO - Attempting execution of SQL: SELECT * FROM "customers"
+2026-05-19 09:44:15,259 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 122
+2026-05-19 09:44:48,204 - INFO - Attempting execution of SQL: SELECT * FROM information_schema.tables
+2026-05-19 09:44:48,260 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 217
+2026-05-19 09:47:20,510 - INFO - Attempting execution of SQL: SELECT * FROM products
+2026-05-19 09:47:20,528 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 110
+2026-05-19 09:47:33,914 - INFO - Attempting execution of SQL: SELECT "country" FROM offices
+2026-05-19 09:47:33,930 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 7
+2026-05-19 09:47:53,303 - INFO - Attempting execution of SQL: SELECT "jobTitle" FROM employees
+2026-05-19 09:47:53,314 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 23
+2026-05-19 09:48:00,899 - INFO - Attempting execution of SQL: SELECT "orderNumber", "productCode", "quantityOrdered", "priceEach", "orderLineNumber", "productVendor" 
+FROM "orderdetails" 
+JOIN "products" ON "orderdetails"."productCode" = "products"."productCode"
+2026-05-19 09:48:00,914 - ERROR - Execution Failed. Error: column reference "productCode" is ambiguous
+LINE 1: SELECT "orderNumber", "productCode", "quantityOrdered", "pri...
+                              ^
+
+2026-05-19 09:48:01,318 - INFO - Attempting execution of SQL: SELECT "orderdetails"."orderNumber", "orderdetails"."productCode", "orderdetails"."quantityOrdered", "orderdetails"."priceEach", "orderdetails"."orderLineNumber", "products"."productVendor" 
+FROM "orderdetails" 
+JOIN "products" ON "orderdetails"."productCode" = "products"."productCode"
+2026-05-19 09:48:01,342 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 2996
+2026-05-19 09:49:17,422 - INFO - Attempting execution of SQL: SELECT "productLine" FROM products WHERE "productCode" = 'S10_1678'
+2026-05-19 09:49:17,433 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 1
+2026-05-19 10:30:54,579 - INFO - Attempting execution of SQL: SELECT COUNT("orderNumber") FROM orders
+2026-05-19 10:30:54,609 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 1
+2026-05-19 10:30:54,610 - INFO - FastAPI Query Execution - Attempt 1 | Time: 0.0313s | Status: success | SQL: SELECT COUNT("orderNumber") FROM orders
+2026-05-19 10:30:57,576 - INFO - Attempting execution of SQL: SELECT "customerNumber", SUM("amount") 
+FROM "customers" 
+JOIN "payments" ON "payments"."customerNumber" = "customers"."customerNumber" 
+GROUP BY "customerNumber"
+2026-05-19 10:30:57,588 - ERROR - Execution Failed. Error: column reference "customerNumber" is ambiguous
+LINE 1: SELECT "customerNumber", SUM("amount") 
+               ^
+
+2026-05-19 10:30:57,588 - INFO - FastAPI Query Execution - Attempt 1 | Time: 0.0123s | Status: failure | SQL: SELECT "customerNumber", SUM("amount") 
+FROM "customers" 
+JOIN "payments" ON "payments"."customerNumber" = "customers"."customerNumber" 
+GROUP BY "customerNumber"
+2026-05-19 10:30:58,699 - INFO - Attempting execution of SQL: SELECT "customers"."customerNumber", SUM("amount") 
+FROM "customers" 
+JOIN "payments" ON "payments"."customerNumber" = "customers"."customerNumber" 
+GROUP BY "customers"."customerNumber"
+2026-05-19 10:30:58,724 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 98
+2026-05-19 10:30:58,724 - INFO - FastAPI Query Execution - Attempt 2 | Time: 0.0254s | Status: success | SQL: SELECT "customers"."customerNumber", SUM("amount") 
+FROM "customers" 
+JOIN "payments" ON "payments"."customerNumber" = "customers"."customerNumber" 
+GROUP BY "customers"."customerNumber"
+2026-05-19 10:36:50,384 - INFO - Attempting execution of SQL: SELECT * FROM customers
+2026-05-19 10:36:50,398 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 122
+2026-05-19 10:36:50,398 - INFO - FastAPI Query Execution - Attempt 1 | Time: 0.0147s | Status: success | SQL: SELECT * FROM customers
+2026-05-19 10:41:07,113 - INFO - Attempting execution of SQL: SELECT p."productName", c."customerName", o."orderNumber", od."quantityOrdered" 
+FROM "orders" o 
+JOIN "customers" c ON o."customerNumber" = c."customerNumber" 
+JOIN "orderdetails" od ON o."orderNumber" = od."orderNumber" 
+JOIN "products" p ON od."productCode" = p."productCode"
+2026-05-19 10:41:07,147 - INFO - Execution Successful. Status: SUCCESS | Total Rows: 2996
+2026-05-19 10:41:07,148 - INFO - FastAPI Query Execution - Attempt 1 | Time: 0.0349s | Status: success | SQL: SELECT p."productName", c."customerName", o."orderNumber", od."quantityOrdered" 
+FROM "orders" o 
+JOIN "customers" c ON o."customerNumber" = c."customerNumber" 
+JOIN "orderdetails" od ON o."orderNumber" = od."orderNumber" 
+JOIN "products" p ON od."productCode" = p."productCode"
